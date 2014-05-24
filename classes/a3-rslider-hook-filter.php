@@ -108,9 +108,9 @@ class A3_Responsive_Slider_Hook_Filter
 		$html .= '<h3>'.__('What is the Yellow border sections about?', 'a3_responsive_slider').'</h3>';
 		$html .= '<p>'.__('Inside the Yellow border you will see the settings for the a3 Responsive Slider Pro version plugin. You can see the settings but they are not active.', 'a3_responsive_slider' ).'</p>';
 		
-		$html .= '<h3>'.__('Try the Pro Version for FREE.', 'a3_responsive_slider').'</h3>';
-		$html .= '<p>'.sprintf( __('<a href="%s" target="_blank">a3 Responsive Slider Pro</a>', 'a3_responsive_slider'), A3_RESPONSIVE_SLIDER_PRO_VERSION_URI ).'<br />';
-		$html .= '* '.__('5 day Free Evaluation trial.', 'a3_responsive_slider' ).'<br />';
+		$html .= '<h3 style="margin-bottom:5px;">* <a href="'.A3_RESPONSIVE_SLIDER_PRO_VERSION_URI.'" target="_blank">'.__('a3 Responsive Slider Pro', 'a3_responsive_slider').'</a></h3>';
+		$html .= '<p>';
+		$html .= '* '. sprintf( __('Trial the <a href="%s" target="_blank">Pro Version for Free</a>', 'a3_responsive_slider'), A3_RESPONSIVE_SLIDER_PRO_VERSION_URI ).'<br />';
 		$html .= '* '.__('Activates Youtube Video Slides.', 'a3_responsive_slider' ).'<br />';
 		$html .= '* '.__('Activates Ken Burns transition Effect.', 'a3_responsive_slider' ).'<br />';
 		$html .= '* '.__('Activates the 2nd custom Slider Skin.', 'a3_responsive_slider' ).'<br />';

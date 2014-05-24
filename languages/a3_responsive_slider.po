@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: A3 Responsive Slider\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-06 11:32+0700\n"
-"PO-Revision-Date: 2014-05-06 11:32+0700\n"
+"POT-Creation-Date: 2014-05-24 14:30+0700\n"
+"PO-Revision-Date: 2014-05-24 14:30+0700\n"
 "Last-Translator: Nguyen Cong Tuan <mr.nguyencongtuan@gmail.com>\n"
 "Language-Team: a3rev\n"
 "Language: en\n"
@@ -312,18 +312,19 @@ msgid "Slider Skins"
 msgstr ""
 
 #: admin/admin-ui.php:127
-#, php-format
-msgid "Settings inside this yellow border are %s Features."
+msgid ""
+"Advanced settings inside this yellow border are not activated on the Lite "
+"Version."
 msgstr ""
 
 #: admin/admin-ui.php:129
 #, php-format
 msgid ""
-"<a href=\"%s\" target=\"_blank\">Trail the Pro Version</a> for Free to "
-"activate these settings."
+"The fully featured %s in availble for <a href=\"%s\" target=\"_blank\">Free "
+"Evaluation Trail Here</a>. No credit card required."
 msgstr ""
 
-#: admin/admin-ui.php:131 admin/admin-ui.php:133
+#: admin/admin-ui.php:131
 msgid "Pro Version"
 msgstr ""
 
@@ -2254,16 +2255,12 @@ msgid ""
 msgstr ""
 
 #: classes/a3-rslider-hook-filter.php:111
-msgid "Try the Pro Version for FREE."
-msgstr ""
-
-#: classes/a3-rslider-hook-filter.php:112
-#, php-format
-msgid "<a href=\"%s\" target=\"_blank\">a3 Responsive Slider Pro</a>"
+msgid "a3 Responsive Slider Pro"
 msgstr ""
 
 #: classes/a3-rslider-hook-filter.php:113
-msgid "5 day Free Evaluation trial."
+#, php-format
+msgid "Trial the <a href=\"%s\" target=\"_blank\">Pro Version for Free</a>"
 msgstr ""
 
 #: classes/a3-rslider-hook-filter.php:114

@@ -124,13 +124,12 @@ class A3_Responsive_Slider_Admin_UI
 	/*-----------------------------------------------------------------------------------*/
 	public function upgrade_top_message( $echo = false, $setting_id = '' ) {
 		$upgrade_top_message = sprintf( '<div class="pro_feature_top_message">' 
-			. __( 'Settings inside this yellow border are %s Features.', 'a3_responsive_slider' ) 
+			. __( 'Advanced settings inside this yellow border are not activated on the Lite Version.', 'a3_responsive_slider' ) 
 			. '<br />' 
-			. __( '<a href="%s" target="_blank">Trail the Pro Version</a> for Free to activate these settings.', 'a3_responsive_slider' ) 
+			. __( 'The fully featured %s in availble for <a href="%s" target="_blank">Free Evaluation Trail Here</a>. No credit card required.', 'a3_responsive_slider' ) 
 			. '</div>'
 			, apply_filters( $this->plugin_name . '_' . $setting_id . '_pro_version_name', apply_filters( $this->plugin_name . '_pro_version_name', __( 'Pro Version', 'a3_responsive_slider' ) ) )
 			, apply_filters( $this->plugin_name . '_' . $setting_id . '_pro_plugin_page_url', apply_filters( $this->plugin_name . '_pro_plugin_page_url', $this->pro_plugin_page_url ) )
-			, apply_filters( $this->plugin_name . '_' . $setting_id . '_pro_version_name', apply_filters( $this->plugin_name . '_pro_version_name', __( 'Pro Version', 'a3_responsive_slider' ) ) )
 		);
 		
 		$upgrade_top_message = apply_filters( $this->plugin_name . '_upgrade_top_message', $upgrade_top_message );

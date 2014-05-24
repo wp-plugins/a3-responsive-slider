@@ -2,8 +2,8 @@
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
-Tested up to: 3.9
-Stable tag: 1.0
+Tested up to: 3.9.1
+Stable tag: 1.0.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -53,7 +53,8 @@ Like WordPress we believe that a3rev plugin users should be able to configure an
 
 = The Pro Version Additional Features =
 
-* 5 day Free Evaluation trial (no credit card required)
+* Industry leading - Full Pro Version [Free Evaluation Trail](http://a3rev.com/shop/a3-responsive-slider/). No Credit Card Required.
+* Immediate access to support from developers on the plugins [a3rev support forum](https://a3rev.com/forums/forum/wordpress-plugins/a3-responsive-slider/).
 * Add Youtube Videos to Sliders
 * Ken Burns transition Effect
 * A 2nd fully customizable Slider Skin.
@@ -127,5 +128,19 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.0.0.1 - 2014/05/24 =
+* Tweak - Changed add_filter( 'gettext', array( $this, 'change_button_text' ), null, 2 ); to add_filter( 'gettext', array( $this, 'change_button_text' ), null, 3 );
+* Tweak - Update change_button_text() function from ( $original == 'Insert into Post' ) to ( is_admin() && $original === 'Insert into Post' )
+* Tweak - Checked and updated for full compatibility with WordPress version 3.9.1
+* Fix - Code tweaks to fix a3 Plugins Framework conflict with WP e-Commerce tax rates.
+
 = 1.0.0 - 2014/05/05 =
 * First Release of Lite Version.
+
+== Upgrade Notification ==
+
+= 1.0.0.1 =
+Update now for full compatibility with WordPress 3.9.1 with some a3rev Plugin Framework code tweaks.
+
+= 1.0.0 =
+First release
