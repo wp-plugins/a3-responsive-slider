@@ -62,16 +62,12 @@ class A3_Responsive_Slider_Hook_Filter
 			$google_fonts[] = $title_font['face'];
 			$google_fonts[] = $caption_font['face'];
 			
-			if ( ! in_array( $template_key, array( 'template-mobile' ) ) ) {
 				extract( ${'a3_rslider_'.$templateid.'_readmore_settings'} );
 				$google_fonts[] = $readmore_link_font['face'];
 				$google_fonts[] = $readmore_bt_font['face'];	
-			}
 			
-			if ( ! in_array( $template_key, array( 'template-widget', 'template-mobile', 'template-card' ) ) ) {
 				extract( ${'a3_rslider_'.$templateid.'_shortcode_settings'} );
 				$google_fonts[] = $shortcode_description_font['face'];
-			}
 			
 			
 		if ( count( $google_fonts ) > 0 ) $a3_responsive_slider_fonts_face->generate_google_webfonts( $google_fonts );
@@ -110,7 +106,6 @@ class A3_Responsive_Slider_Hook_Filter
 		
 		$html .= '<h3 style="margin-bottom:5px;">* <a href="'.A3_RESPONSIVE_SLIDER_PRO_VERSION_URI.'" target="_blank">'.__('a3 Responsive Slider Pro', 'a3_responsive_slider').'</a></h3>';
 		$html .= '<p>';
-		$html .= '* '. sprintf( __('Trial the <a href="%s" target="_blank">Pro Version for Free</a>', 'a3_responsive_slider'), A3_RESPONSIVE_SLIDER_PRO_VERSION_URI ).'<br />';
 		$html .= '* '.__('Activates Youtube Video Slides.', 'a3_responsive_slider' ).'<br />';
 		$html .= '* '.__('Activates Ken Burns transition Effect.', 'a3_responsive_slider' ).'<br />';
 		$html .= '* '.__('Activates the 2nd custom Slider Skin.', 'a3_responsive_slider' ).'<br />';
@@ -135,7 +130,7 @@ class A3_Responsive_Slider_Hook_Filter
 		$html .= '<h3>'.__('More a3rev Free WordPress plugins', 'a3_responsive_slider').'</h3>';
 		$html .= '<p>';
 		$html .= '<ul style="padding-left:10px;">';
-		$html .= '<li>* <a href="http://wordpress.org/plugins/wp-email-template/" target="_blank">'.__('WP Email Templatee', 'a3_responsive_slider').'</a></li>';
+		$html .= '<li>* <a href="http://wordpress.org/plugins/wp-email-template/" target="_blank">'.__('WP Email Template', 'a3_responsive_slider').'</a></li>';
 		$html .= '<li>* <a href="http://wordpress.org/plugins/contact-us-page-contact-people/" target="_blank">'.__('Contact Us Page - Contact People', 'a3_responsive_slider').'</a></li>';
 		$html .= '<li>* <a href="http://wordpress.org/extend/plugins/page-views-count/" target="_blank">'.__('Page View Count', 'a3_responsive_slider').'</a></li>';
 		$html .= '</ul>';

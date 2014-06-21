@@ -32,6 +32,14 @@ class A3_Responsive_Slider_Admin_UI
 	 */
 	public $plugin_name = 'a3_responsive_slider';
 	
+	public $is_free_plugin = true;
+	
+	/**
+	 * @var string
+	 * You must change to correct class name that you are working
+	 */
+	public $class_name = 'A3_Responsive_Slider';
+	
 	/**
 	 * @var string
 	 * You must change to correct pro plugin page url on a3rev site
@@ -126,10 +134,10 @@ class A3_Responsive_Slider_Admin_UI
 		$upgrade_top_message = sprintf( '<div class="pro_feature_top_message">' 
 			. __( 'Advanced settings inside this yellow border are not activated on the Lite Version.', 'a3_responsive_slider' ) 
 			. '<br />' 
-			. __( 'The fully featured %s in availble for <a href="%s" target="_blank">Free Evaluation Trail Here</a>. No credit card required.', 'a3_responsive_slider' ) 
+			. __( 'Upgrade to the <a href="%s" target="_blank">%s</a> to activate these settings.', 'a3_responsive_slider' ) 
 			. '</div>'
-			, apply_filters( $this->plugin_name . '_' . $setting_id . '_pro_version_name', apply_filters( $this->plugin_name . '_pro_version_name', __( 'Pro Version', 'a3_responsive_slider' ) ) )
 			, apply_filters( $this->plugin_name . '_' . $setting_id . '_pro_plugin_page_url', apply_filters( $this->plugin_name . '_pro_plugin_page_url', $this->pro_plugin_page_url ) )
+			, apply_filters( $this->plugin_name . '_' . $setting_id . '_pro_version_name', apply_filters( $this->plugin_name . '_pro_version_name', __( 'Pro Version', 'a3_responsive_slider' ) ) )
 		);
 		
 		$upgrade_top_message = apply_filters( $this->plugin_name . '_upgrade_top_message', $upgrade_top_message );
