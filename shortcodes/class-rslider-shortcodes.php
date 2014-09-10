@@ -313,7 +313,7 @@ class A3_Responsive_Slider_Shortcode
 		}
 		
 		require_once A3_RESPONSIVE_SLIDER_DIR . '/includes/mobile_detect.php';
-		$device_detect = new Mobile_Detect();
+		$device_detect = new A3_RSlider_Mobile_Detect();
 		if ( $device_detect->isMobile() ) {
 			$rslider_custom_style = '';
 			$rslider_inline_style = '';
