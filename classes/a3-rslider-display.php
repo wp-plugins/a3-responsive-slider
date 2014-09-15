@@ -42,7 +42,7 @@ class A3_Responsive_Slider_Display
 		// Detect the slider is viewing on Mobile, if True then Show Slider for Mobile 
 		if ( ${'a3_rslider_'.$templateid.'_global_settings'}['enable_slider_touch'] == 1 ) {
 			require_once A3_RESPONSIVE_SLIDER_DIR . '/includes/mobile_detect.php';
-			$device_detect = new Mobile_Detect();
+			$device_detect = new A3_RSlider_Mobile_Detect();
 			if ( $device_detect->isMobile() ) {
 				$is_used_mobile_skin = false;
 				

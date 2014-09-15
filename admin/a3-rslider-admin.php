@@ -2,7 +2,7 @@
 update_option('a3rev_rslider_plugin', 'a3_responsive_slider');
 
 function a3_rslider_activated(){
-	update_option('a3rev_rslider_version', '1.0.0.2');
+	update_option('a3rev_rslider_version', '1.0.0.4');
 	
 	// Set Settings Default from Admin Init
 	global $a3_responsive_slider_admin_init;
@@ -122,7 +122,7 @@ add_action( 'admin_enqueue_scripts', array( 'A3_Responsive_Slider_Hook_Filter', 
 	
 	/* END : Duplicate a room */
 			
-	update_option('a3rev_rslider_version', '1.0.0.2');
+	update_option('a3rev_rslider_version', '1.0.0.4');
 	
 	// Template Tag for Developer use to put into php code
 	function a3_responsive_slider( $slider_id = 0 ) {

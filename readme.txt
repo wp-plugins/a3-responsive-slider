@@ -2,8 +2,8 @@
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
-Tested up to: 3.9.1
-Stable tag: 1.0.0.1
+Tested up to: 4.0
+Stable tag: 1.0.0.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,9 +51,15 @@ Like WordPress we believe that a3rev plugin users should be able to configure an
 * We do not watch that forum and rarely visit it. 
 * Pro Version Licence gives 'write' access to the a3rev support forum and priority support as part of the License.
 
+>= Premium Support = 
+>
+>The a3rev team does not provide support for the a3 Responsive Slider plugin on the WordPress.org forums. One on one developer support is available via the plugins a3rev [support forum](https://a3rev.com/forums/forum/wordpress-plugins/a3-responsive-slider/) to people who have purchased a [a3 Responsive Slider Pro](http://a3rev.com/shop/a3-responsive-slider/) plugin Lifetime License. 
+>
+>The Pro Version has lots of extra features that coupled with developer support might be well worth your investment!
+
 = The Pro Version Additional Features =
 
-* Industry leading - Full Pro Version [Free Evaluation Trail](http://a3rev.com/shop/a3-responsive-slider/). No Credit Card Required.
+* Industry leading - [Full Pro Version](http://a3rev.com/shop/a3-responsive-slider/).
 * Immediate access to support from developers on the plugins [a3rev support forum](https://a3rev.com/forums/forum/wordpress-plugins/a3-responsive-slider/).
 * Add Youtube Videos to Sliders
 * Ken Burns transition Effect
@@ -128,6 +134,19 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.0.0.4 - 2014/09/10 =
+* Tweak - Updated google font face in plugin framework.
+* Tweak - Tested 100% compatible with WordPress Version 4.0
+
+= 1.0.0.3 - 2014/07/19 =
+* Fix - Changed Mobile_Detect Lib class name to A3_RSlider_Mobile_Detect to prevent conflict with other plugins that use the global class name.
+* Credit - Thanks to Flemming Andersen for the access to his site to find and fix the class name conflict.
+
+= 1.0.0.2 - 2014/06/21 = 
+* Tweak - Updated chosen js script to latest version 1.1.0 on the a3rev Plugin Framework 
+* Tweak - Added support for placeholder feature for input, email , password , text area types 
+* Tweak - Updated plugins description text and admin panel yellow sidebar text.
+
 = 1.0.0.1 - 2014/05/24 =
 * Tweak - Changed add_filter( 'gettext', array( $this, 'change_button_text' ), null, 2 ); to add_filter( 'gettext', array( $this, 'change_button_text' ), null, 3 );
 * Tweak - Update change_button_text() function from ( $original == 'Insert into Post' ) to ( is_admin() && $original === 'Insert into Post' )
@@ -138,6 +157,15 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.0.0.4 =
+Upgrade your plugin now for a Framework code tweak and full compatibility with WordPress Version 4.0
+
+= 1.0.0.3 =
+Update your plugin now for mobile detect class name conflict bug fix
+
+= 1.0.0.2 =
+Update now for 2 important framework code tweaks to keep you plugin in tip top running order.
 
 = 1.0.0.1 =
 Update now for full compatibility with WordPress 3.9.1 with some a3rev Plugin Framework code tweaks.
