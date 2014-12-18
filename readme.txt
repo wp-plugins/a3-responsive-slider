@@ -3,7 +3,7 @@ Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
 Tested up to: 4.0
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -154,6 +154,10 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.1.1 - 2014/12/18 =
+* Tweak - added div tag to href= jQuery when click add image to slider gallery. Some plugins like MOJO Market Place plugin enforce div on image URLs site wide.
+* Credit - thanks to Bill Passawe for reporting the issue and giving us access to his site to find the issue and make a patch.
+
 = 1.1.0 - 2014/09/15 =
 * Feature - Converted all front end CSS #dynamic {stylesheets} to Sass #dynamic {stylesheets} for faster loading.
 * Feature - Convert all back end CSS to Sass.
@@ -181,6 +185,9 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.1.1 =
+Upgrade now for an image insert tweak.
 
 = 1.1.0 =
 Major Version upgrade. Upgrade now for full front end conversion to Sass #dynamic {stylesheets} and admin panel to Sass.

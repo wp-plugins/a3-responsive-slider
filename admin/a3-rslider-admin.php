@@ -2,7 +2,7 @@
 update_option('a3rev_rslider_plugin', 'a3_responsive_slider');
 
 function a3_rslider_activated(){
-	update_option('a3rev_rslider_version', '1.1.0');
+	update_option('a3rev_rslider_version', '1.1.1');
 
 	// Set Settings Default from Admin Init
 	global $a3_responsive_slider_admin_init;
@@ -133,7 +133,7 @@ function a3_rslider_upgrade_plugin () {
 		update_option('a3rev_rslider_version', '1.1.0');
 	}
 
-	update_option('a3rev_rslider_version', '1.1.0');
+	update_option('a3rev_rslider_version', '1.1.1');
 }
 
 	// Template Tag for Developer use to put into php code

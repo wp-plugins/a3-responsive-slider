@@ -3,7 +3,8 @@
 
 /* Slider Container Style */
 .a3-rslider-container {
-	position:relative;	
+	position:relative;
+	max-width: 100%;
 }
 .a3-cycle-slideshow {
 	margin: auto;

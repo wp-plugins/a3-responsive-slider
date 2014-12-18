@@ -269,7 +269,7 @@ class A3_Responsive_Slider_Shortcode
 			
 		if ( $inline_post ) {
 		
-			if ( $align == 'center' ) $rslider_custom_style .= 'float:none;margin:auto;display:table;';
+			if ( $align == 'center' ) $rslider_custom_style .= 'float:none;margin:auto;display:block;';
 			elseif ( $align == 'left-wrap' ) $rslider_custom_style .= 'float:left;';
 			elseif ( $align == 'right-wrap' ) $rslider_custom_style .= 'float:right;';
 			else $rslider_custom_style .= 'float:'. $align .';';
