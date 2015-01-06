@@ -2,7 +2,7 @@
 update_option('a3rev_rslider_plugin', 'a3_responsive_slider');
 
 function a3_rslider_activated(){
-	update_option('a3rev_rslider_version', '1.1.1');
+	update_option('a3rev_rslider_version', '1.1.2');
 
 	// Set Settings Default from Admin Init
 	global $a3_responsive_slider_admin_init;
@@ -50,7 +50,7 @@ add_action( 'admin_enqueue_scripts', array( 'A3_Responsive_Slider_Hook_Filter', 
 
 	add_action( 'init', array( 'A3_Responsive_Slider_Edit', 'slider_form_action' ) );
 
-	add_action( 'wp_head', array( 'A3_Responsive_Slider_Hook_Filter', 'include_frontend_script' ), 20 );
+	add_action( 'wp_enqueue_scripts', array( 'A3_Responsive_Slider_Hook_Filter', 'include_frontend_script' ), 11 );
 
 	// Include google fonts into header
 	add_action( 'wp_head', array( 'A3_Responsive_Slider_Hook_Filter', 'add_google_fonts'), 10 );
@@ -63,7 +63,10 @@ add_action( 'admin_enqueue_scripts', array( 'A3_Responsive_Slider_Hook_Filter', 
 		if ( in_array( basename( $_SERVER['PHP_SELF'] ), array( 'post.php' ) ) && isset( $_GET['post'] ) && get_post_type( $_GET['post'] ) == 'a3_slider' ) $is_a3_slider_list_edit_page = true;
 
 		if ( $is_a3_slider_list_edit_page ) {
-			add_action( 'admin_footer', array( 'A3_Responsive_Slider_Hook_Filter', 'include_frontend_script' ) );
+			add_action( 'admin_enqueue_scripts', array( 'A3_Responsive_Slider_Hook_Filter', 'include_frontend_script' ) );
+
+			add_action( 'admin_footer', array( 'A3_Responsive_Slider_Hook_Filter', 'enqueue_frontend_script' ) );
+
 			// Include google fonts into header
 			add_action( 'admin_footer', array( 'A3_Responsive_Slider_Hook_Filter', 'add_google_fonts'), 10 );
 			// Add Custom style on frontend
@@ -133,7 +136,7 @@ function a3_rslider_upgrade_plugin () {
 		update_option('a3rev_rslider_version', '1.1.0');
 	}
 
-	update_option('a3rev_rslider_version', '1.1.1');
+	update_option('a3rev_rslider_version', '1.1.2');
 }
 
 	// Template Tag for Developer use to put into php code

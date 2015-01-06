@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: A3 Responsive Slider\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-21 12:16+0700\n"
-"PO-Revision-Date: 2014-06-21 12:16+0700\n"
+"POT-Creation-Date: 2015-01-06 10:55+0700\n"
+"PO-Revision-Date: 2015-01-06 10:55+0700\n"
 "Last-Translator: Nguyen Cong Tuan <mr.nguyencongtuan@gmail.com>\n"
 "Language-Team: a3rev\n"
 "Language: en\n"
@@ -84,10 +84,10 @@ msgstr ""
 msgid "Outset"
 msgstr ""
 
-#: admin/admin-interface.php:1354 admin/admin-interface.php:1444
-#: admin/admin-interface.php:1473 admin/classes/a3-rslider-edit.php:261
-#: admin/classes/a3-rslider-edit.php:339 admin/classes/a3-rslider-edit.php:355
-#: admin/classes/a3-rslider-edit.php:846
+#: admin/admin-interface.php:1360 admin/admin-interface.php:1450
+#: admin/admin-interface.php:1479 admin/classes/a3-rslider-edit.php:262
+#: admin/classes/a3-rslider-edit.php:340 admin/classes/a3-rslider-edit.php:356
+#: admin/classes/a3-rslider-edit.php:847
 #: admin/settings/template-1/caption-settings.php:193
 #: admin/settings/template-1/control-settings.php:193
 #: admin/settings/template-1/control-settings.php:211
@@ -140,10 +140,10 @@ msgstr ""
 msgid "ON"
 msgstr ""
 
-#: admin/admin-interface.php:1355 admin/admin-interface.php:1445
-#: admin/admin-interface.php:1474 admin/classes/a3-rslider-edit.php:262
-#: admin/classes/a3-rslider-edit.php:340 admin/classes/a3-rslider-edit.php:356
-#: admin/classes/a3-rslider-edit.php:847
+#: admin/admin-interface.php:1361 admin/admin-interface.php:1451
+#: admin/admin-interface.php:1480 admin/classes/a3-rslider-edit.php:263
+#: admin/classes/a3-rslider-edit.php:341 admin/classes/a3-rslider-edit.php:357
+#: admin/classes/a3-rslider-edit.php:848
 #: admin/settings/template-1/caption-settings.php:194
 #: admin/settings/template-1/control-settings.php:194
 #: admin/settings/template-1/control-settings.php:212
@@ -196,14 +196,14 @@ msgstr ""
 msgid "OFF"
 msgstr ""
 
-#: admin/admin-interface.php:1515
+#: admin/admin-interface.php:1521
 #: admin/settings/template-1/dimensions-settings.php:207
 #: admin/settings/template-2/dimensions-settings.php:222
 #: admin/settings/template-card/dimensions-settings.php:222
 msgid "Width"
 msgstr ""
 
-#: admin/admin-interface.php:1517
+#: admin/admin-interface.php:1523
 #: admin/settings/template-1/dimensions-settings.php:212
 #: admin/settings/template-1/dimensions-settings.php:249
 #: admin/settings/template-2/dimensions-settings.php:227
@@ -214,95 +214,95 @@ msgstr ""
 msgid "Height"
 msgstr ""
 
-#: admin/admin-interface.php:1519
+#: admin/admin-interface.php:1525
 msgid "Hard Crop"
 msgstr ""
 
-#: admin/admin-interface.php:1596
+#: admin/admin-interface.php:1602
 msgid "-- Default Fonts --"
 msgstr ""
 
-#: admin/admin-interface.php:1607
+#: admin/admin-interface.php:1613
 msgid "-- Google Fonts --"
 msgstr ""
 
-#: admin/admin-interface.php:1648
+#: admin/admin-interface.php:1654
 msgid "Preview your customized typography settings"
 msgstr ""
 
-#: admin/admin-interface.php:1782 admin/admin-interface.php:2041
+#: admin/admin-interface.php:1788 admin/admin-interface.php:2047
 msgid "Preview your customized border settings"
 msgstr ""
 
-#: admin/admin-interface.php:1791 admin/admin-interface.php:2032
+#: admin/admin-interface.php:1797 admin/admin-interface.php:2038
 msgid "Rounded"
 msgstr ""
 
-#: admin/admin-interface.php:1792 admin/admin-interface.php:2033
+#: admin/admin-interface.php:1798 admin/admin-interface.php:2039
 msgid "Square"
 msgstr ""
 
-#: admin/admin-interface.php:1802 admin/admin-interface.php:2046
+#: admin/admin-interface.php:1808 admin/admin-interface.php:2052
 msgid "Top Left Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1822 admin/admin-interface.php:2066
+#: admin/admin-interface.php:1828 admin/admin-interface.php:2072
 msgid "Top Right Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1842 admin/admin-interface.php:2086
+#: admin/admin-interface.php:1848 admin/admin-interface.php:2092
 msgid "Bottom Right Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1862 admin/admin-interface.php:2106
+#: admin/admin-interface.php:1868 admin/admin-interface.php:2112
 msgid "Bottom Left Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1955
+#: admin/admin-interface.php:1961
 msgid "Preview your customized border styles settings"
 msgstr ""
 
-#: admin/admin-interface.php:2167
+#: admin/admin-interface.php:2173
 msgid "YES"
 msgstr ""
 
-#: admin/admin-interface.php:2168
+#: admin/admin-interface.php:2174
 msgid "NO"
 msgstr ""
 
-#: admin/admin-interface.php:2182
+#: admin/admin-interface.php:2188
 msgid "Horizontal Shadow"
 msgstr ""
 
-#: admin/admin-interface.php:2200
+#: admin/admin-interface.php:2206
 msgid "Vertical Shadow"
 msgstr ""
 
-#: admin/admin-interface.php:2218
+#: admin/admin-interface.php:2224
 msgid "Blur Distance"
 msgstr ""
 
-#: admin/admin-interface.php:2236
+#: admin/admin-interface.php:2242
 msgid "Spread Size"
 msgstr ""
 
-#: admin/admin-interface.php:2254
+#: admin/admin-interface.php:2260
 msgid "INNER"
 msgstr ""
 
-#: admin/admin-interface.php:2255
+#: admin/admin-interface.php:2261
 msgid "OUTER"
 msgstr ""
 
-#: admin/admin-interface.php:2273
+#: admin/admin-interface.php:2279
 msgid "Preview your customized box shadow settings"
 msgstr ""
 
-#: admin/admin-interface.php:2509
+#: admin/admin-interface.php:2515
 msgid "Save changes"
 msgstr ""
 
-#: admin/admin-interface.php:2510
+#: admin/admin-interface.php:2516
 msgid "Reset Settings"
 msgstr ""
 
@@ -349,60 +349,60 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:116 classes/a3-rslider-custom-post.php:41
+#: admin/classes/a3-rslider-edit.php:117 classes/a3-rslider-custom-post.php:41
 msgid "Edit Slider"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:118
+#: admin/classes/a3-rslider-edit.php:119
 msgid "Update"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:132 admin/classes/a3-rslider-edit.php:954
+#: admin/classes/a3-rslider-edit.php:133 admin/classes/a3-rslider-edit.php:955
 msgid "Add Video"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:133 admin/classes/a3-rslider-edit.php:955
+#: admin/classes/a3-rslider-edit.php:134 admin/classes/a3-rslider-edit.php:956
 msgid "Add Image"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:134 admin/classes/a3-rslider-edit.php:956
+#: admin/classes/a3-rslider-edit.php:135 admin/classes/a3-rslider-edit.php:957
 #: classes/a3-rslider-custom-post.php:294
 msgid "Preview"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:134 admin/classes/a3-rslider-edit.php:956
+#: admin/classes/a3-rslider-edit.php:135 admin/classes/a3-rslider-edit.php:957
 msgid "Preview Slider"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:139
+#: admin/classes/a3-rslider-edit.php:140
 msgid "Settings"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:140 admin/classes/a3-rslider-edit.php:276
+#: admin/classes/a3-rslider-edit.php:141 admin/classes/a3-rslider-edit.php:277
 msgid "Transition Effects"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:141
+#: admin/classes/a3-rslider-edit.php:142
 msgid "Shuffle Effect"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:142
+#: admin/classes/a3-rslider-edit.php:143
 msgid "Tile Effect"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:144
+#: admin/classes/a3-rslider-edit.php:145
 msgid "Embed"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:152
+#: admin/classes/a3-rslider-edit.php:153
 msgid "Slider Name"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:166
+#: admin/classes/a3-rslider-edit.php:167
 msgid "Slider Skin"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:173
+#: admin/classes/a3-rslider-edit.php:174
 #, php-format
 msgid ""
 "This Lite Version of the plugin has 1 skin available. Try \n"
@@ -410,19 +410,19 @@ msgid ""
 "2nd Slider Skin, Card Skin, Widget Skin and Touch Mobile Skin."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:179
+#: admin/classes/a3-rslider-edit.php:180
 msgid "Select Template"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:205
+#: admin/classes/a3-rslider-edit.php:206
 msgid "Assign to Folders"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:211
+#: admin/classes/a3-rslider-edit.php:212
 msgid "Select Folders"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:248
+#: admin/classes/a3-rslider-edit.php:249
 #, php-format
 msgid ""
 "Show Youtube Videos in Slider is an advanced feature Activated in the Pro "
@@ -430,133 +430,133 @@ msgid ""
 "to see if this is a feature you want."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:250
+#: admin/classes/a3-rslider-edit.php:251
 msgid "Videos in Slider"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:254
+#: admin/classes/a3-rslider-edit.php:255
 msgid "Youtube Videos"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:283 admin/classes/a3-rslider-edit.php:619
+#: admin/classes/a3-rslider-edit.php:284 admin/classes/a3-rslider-edit.php:620
 msgid "Select Effect"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:301
+#: admin/classes/a3-rslider-edit.php:302
 msgid "Transition Timing"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:302
+#: admin/classes/a3-rslider-edit.php:303
 msgid ""
 "Videos slider transitions are manual not auto. Be sure to use a Skin that "
 "has Controls activated for manual scroll > Next < Previous."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:305 admin/classes/a3-rslider-edit.php:455
-#: admin/classes/a3-rslider-edit.php:708
+#: admin/classes/a3-rslider-edit.php:306 admin/classes/a3-rslider-edit.php:456
+#: admin/classes/a3-rslider-edit.php:709
 msgid "Transition Effect Speed"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:319 admin/classes/a3-rslider-edit.php:424
-#: admin/classes/a3-rslider-edit.php:444 admin/classes/a3-rslider-edit.php:469
-#: admin/classes/a3-rslider-edit.php:677 admin/classes/a3-rslider-edit.php:697
-#: admin/classes/a3-rslider-edit.php:722
+#: admin/classes/a3-rslider-edit.php:320 admin/classes/a3-rslider-edit.php:425
+#: admin/classes/a3-rslider-edit.php:445 admin/classes/a3-rslider-edit.php:470
+#: admin/classes/a3-rslider-edit.php:678 admin/classes/a3-rslider-edit.php:698
+#: admin/classes/a3-rslider-edit.php:723
 msgid "second(s)"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:328
+#: admin/classes/a3-rslider-edit.php:329
 msgid "Youtube Settings"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:332
+#: admin/classes/a3-rslider-edit.php:333
 msgid "Youtube Auto Start"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:343
+#: admin/classes/a3-rslider-edit.php:344
 msgid ""
 "ON to have videos automatically start when they are visible in the slideshow."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:348
+#: admin/classes/a3-rslider-edit.php:349
 msgid "Youtube Auto Pause"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:359
+#: admin/classes/a3-rslider-edit.php:360
 msgid ""
 "ON for current slide video to be auto paused when user transition to next "
 "slide."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:366 admin/classes/a3-rslider-edit.php:596
+#: admin/classes/a3-rslider-edit.php:367 admin/classes/a3-rslider-edit.php:597
 msgid "Image Transition Effects"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:370 admin/classes/a3-rslider-edit.php:600
+#: admin/classes/a3-rslider-edit.php:371 admin/classes/a3-rslider-edit.php:601
 msgid "Effect Type"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:377
+#: admin/classes/a3-rslider-edit.php:378
 msgid "Ken Burns"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:378 admin/classes/a3-rslider-edit.php:612
+#: admin/classes/a3-rslider-edit.php:379 admin/classes/a3-rslider-edit.php:613
 msgid "2D Effects"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:389
+#: admin/classes/a3-rslider-edit.php:390
 msgid "Ken Burns Effect Settings"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:392
+#: admin/classes/a3-rslider-edit.php:393
 msgid "Ken Burns Transition Method"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:398 admin/classes/a3-rslider-edit.php:650
+#: admin/classes/a3-rslider-edit.php:399 admin/classes/a3-rslider-edit.php:651
 msgid "AUTO"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:399 admin/classes/a3-rslider-edit.php:651
+#: admin/classes/a3-rslider-edit.php:400 admin/classes/a3-rslider-edit.php:652
 msgid "MANUAL"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:410 admin/classes/a3-rslider-edit.php:663
+#: admin/classes/a3-rslider-edit.php:411 admin/classes/a3-rslider-edit.php:664
 msgid "Auto Start Delay"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:430 admin/classes/a3-rslider-edit.php:683
+#: admin/classes/a3-rslider-edit.php:431 admin/classes/a3-rslider-edit.php:684
 msgid "Time Between Transitions"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:481
+#: admin/classes/a3-rslider-edit.php:482
 msgid "Ken Burns Duration"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:496
+#: admin/classes/a3-rslider-edit.php:497
 msgid "The number of seconds to duration."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:508
+#: admin/classes/a3-rslider-edit.php:509
 msgid "Ken Burns Zoom"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:519 admin/classes/a3-rslider-edit.php:546
+#: admin/classes/a3-rslider-edit.php:520 admin/classes/a3-rslider-edit.php:547
 #: classes/a3-rslider-functions.php:29
 msgid "Random"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:520
+#: admin/classes/a3-rslider-edit.php:521
 msgid "Zoom Out"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:521
+#: admin/classes/a3-rslider-edit.php:522
 msgid "Zoom In"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:535
+#: admin/classes/a3-rslider-edit.php:536
 msgid "Ken Burns Start Position"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:547
+#: admin/classes/a3-rslider-edit.php:548
 #: admin/settings/template-1/caption-settings.php:207
 #: admin/settings/template-1/pager-settings.php:239
 #: admin/settings/template-1/title-settings.php:207
@@ -569,7 +569,7 @@ msgstr ""
 msgid "Top Left"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:548
+#: admin/classes/a3-rslider-edit.php:549
 #: admin/settings/template-1/pager-settings.php:240
 #: admin/settings/template-2/pager-settings.php:255
 #: admin/settings/template-card/pager-settings.php:255
@@ -578,7 +578,7 @@ msgstr ""
 msgid "Top Center"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:549
+#: admin/classes/a3-rslider-edit.php:550
 #: admin/settings/template-1/caption-settings.php:208
 #: admin/settings/template-1/pager-settings.php:241
 #: admin/settings/template-1/title-settings.php:208
@@ -591,19 +591,19 @@ msgstr ""
 msgid "Top Right"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:550
+#: admin/classes/a3-rslider-edit.php:551
 msgid "Center Left"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:551
+#: admin/classes/a3-rslider-edit.php:552
 msgid "Center Center"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:552
+#: admin/classes/a3-rslider-edit.php:553
 msgid "Center Right"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:553
+#: admin/classes/a3-rslider-edit.php:554
 #: admin/settings/template-1/caption-settings.php:209
 #: admin/settings/template-1/pager-settings.php:242
 #: admin/settings/template-1/title-settings.php:209
@@ -616,7 +616,7 @@ msgstr ""
 msgid "Bottom Left"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:554
+#: admin/classes/a3-rslider-edit.php:555
 #: admin/settings/template-1/pager-settings.php:243
 #: admin/settings/template-2/pager-settings.php:258
 #: admin/settings/template-card/pager-settings.php:258
@@ -625,7 +625,7 @@ msgstr ""
 msgid "Bottom Center"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:555
+#: admin/classes/a3-rslider-edit.php:556
 #: admin/settings/template-1/caption-settings.php:210
 #: admin/settings/template-1/pager-settings.php:244
 #: admin/settings/template-1/title-settings.php:210
@@ -638,111 +638,111 @@ msgstr ""
 msgid "Bottom Right"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:569
+#: admin/classes/a3-rslider-edit.php:570
 msgid "Ken Burns End Position"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:604
+#: admin/classes/a3-rslider-edit.php:605
 msgid "2D EFFECTS"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:641
+#: admin/classes/a3-rslider-edit.php:642
 msgid "Image Transition Timing"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:644
+#: admin/classes/a3-rslider-edit.php:645
 msgid "Transition Method"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:738
+#: admin/classes/a3-rslider-edit.php:739
 msgid "Shuffle Effect Settings"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:742
+#: admin/classes/a3-rslider-edit.php:743
 msgid "Shuffle Left"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:752
+#: admin/classes/a3-rslider-edit.php:753
 msgid ""
 "Pixel position relative to the container's left edge to move the slide when "
 "transitioning. Set to negative to move beyond the container's left edge."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:757
+#: admin/classes/a3-rslider-edit.php:758
 msgid "Shuffle Right"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:767
+#: admin/classes/a3-rslider-edit.php:768
 msgid ""
 "Number of pixels beyond right edge of container to move the slide when "
 "transitioning."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:772
+#: admin/classes/a3-rslider-edit.php:773
 msgid "Shuffle Top"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:782
+#: admin/classes/a3-rslider-edit.php:783
 msgid ""
 "Number of pixels beyond top edge of container to move the slide when "
 "transitioning."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:791
+#: admin/classes/a3-rslider-edit.php:792
 msgid "Tile Effect Settings"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:795
+#: admin/classes/a3-rslider-edit.php:796
 msgid "Tile Count"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:810
+#: admin/classes/a3-rslider-edit.php:811
 msgid "The number of tiles to use in the transition."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:817
+#: admin/classes/a3-rslider-edit.php:818
 msgid "Tile Delay"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:832
+#: admin/classes/a3-rslider-edit.php:833
 msgid "The number of seconds to delay each individual tile transition."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:839
+#: admin/classes/a3-rslider-edit.php:840
 msgid "Tile Vertical"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:851
+#: admin/classes/a3-rslider-edit.php:852
 msgid "Set to OFF for a horizontal transition."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:865
+#: admin/classes/a3-rslider-edit.php:866
 #: admin/settings/template-1/shortcode-settings.php:136
 #: admin/settings/template-2/shortcode-settings.php:151
 msgid "Shortcode"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:879
+#: admin/classes/a3-rslider-edit.php:880
 msgid "Template tag"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:944
+#: admin/classes/a3-rslider-edit.php:945
 #: classes/a3-rslider-custom-post.php:294
 msgid "Slider Preview"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:961
+#: admin/classes/a3-rslider-edit.php:962
 #, php-format
 msgid ""
 "There are no Slider yet. You can create new Slider at <a href=\"%s\">here</"
 "a>."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:971 admin/classes/a3-rslider-edit.php:987
+#: admin/classes/a3-rslider-edit.php:972 admin/classes/a3-rslider-edit.php:988
 msgid "Add an Image"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:993
+#: admin/classes/a3-rslider-edit.php:994
 #: admin/settings/template-1/title-settings.php:186
 #: admin/settings/template-2/title-settings.php:201
 #: admin/settings/template-card/title-settings.php:201
@@ -752,19 +752,19 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:999
+#: admin/classes/a3-rslider-edit.php:1000
 msgid "Youtube Code"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:1000
+#: admin/classes/a3-rslider-edit.php:1001
 msgid "Example"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:1005
+#: admin/classes/a3-rslider-edit.php:1006
 msgid "Link URL"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:1010
+#: admin/classes/a3-rslider-edit.php:1011
 #: admin/settings/template-1/caption-settings.php:186
 #: admin/settings/template-2/caption-settings.php:201
 #: admin/settings/template-card/caption-settings.php:201
@@ -773,11 +773,11 @@ msgstr ""
 msgid "Caption"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:1015
+#: admin/classes/a3-rslider-edit.php:1016
 msgid "Reorder Galleries Items"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:1015
+#: admin/classes/a3-rslider-edit.php:1016
 msgid "Delete Item"
 msgstr ""
 
@@ -2240,110 +2240,110 @@ msgstr ""
 msgid "Tile Blind"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:103
+#: classes/a3-rslider-hook-filter.php:182
 msgid "Thanks for choosing to install the a3 Responsive Slider Lite."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:104
+#: classes/a3-rslider-hook-filter.php:183
 msgid "What is the Yellow border sections about?"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:105
+#: classes/a3-rslider-hook-filter.php:184
 msgid ""
 "Inside the Yellow border you will see the settings for the a3 Responsive "
 "Slider Pro version plugin. You can see the settings but they are not active."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:107
+#: classes/a3-rslider-hook-filter.php:186
 msgid "a3 Responsive Slider Pro"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:109
+#: classes/a3-rslider-hook-filter.php:188
 msgid "Activates Youtube Video Slides."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:110
+#: classes/a3-rslider-hook-filter.php:189
 msgid "Activates Ken Burns transition Effect."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:111
+#: classes/a3-rslider-hook-filter.php:190
 msgid "Activates the 2nd custom Slider Skin."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:112
+#: classes/a3-rslider-hook-filter.php:191
 msgid "Activates the custom Card Skin."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:113
+#: classes/a3-rslider-hook-filter.php:192
 msgid "Activates the custom Widget Skin."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:114
+#: classes/a3-rslider-hook-filter.php:193
 msgid "Activates the custom Touch Mobile Skin."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:115
+#: classes/a3-rslider-hook-filter.php:194
 msgid "Access to the plugins a3rev support forum."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:118
+#: classes/a3-rslider-hook-filter.php:197
 msgid "If you are trailing the Pro version must:"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:120
+#: classes/a3-rslider-hook-filter.php:199
 msgid "DEACTIVATE the Lite BEFORE installing and activating another version."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:121
+#: classes/a3-rslider-hook-filter.php:200
 msgid "If you don't you will get a FATAL ERROR."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:122
+#: classes/a3-rslider-hook-filter.php:201
 msgid ""
 "All data - sliders, settings and activations will be present in the newly "
 "activated version."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:123
+#: classes/a3-rslider-hook-filter.php:202
 msgid ""
 "WARNING - If you DELETE this plugin BEFORE you activate another version of "
 "the slider, all slider settings will be lost."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:127
-msgid "NO RISK FREE TRIALS"
-msgstr ""
-
-#: classes/a3-rslider-hook-filter.php:128
-#, php-format
-msgid ""
-"All of our software is available for FREE evaluation before purchase at <a "
-"href=\"%s\" target=\"_blank\">a3rev.com</a>. The system is all automated "
-"which makes it really easy to try all of our software any time you think it "
-"might solve a problem for you or add a much needed feature."
-msgstr ""
-
-#: classes/a3-rslider-hook-filter.php:130
+#: classes/a3-rslider-hook-filter.php:206
 msgid "More a3rev Free WordPress plugins"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:133
+#: classes/a3-rslider-hook-filter.php:209
+msgid "a3 Lazy Load"
+msgstr ""
+
+#: classes/a3-rslider-hook-filter.php:209
+#: classes/a3-rslider-hook-filter.php:210
+msgid "New Plugin"
+msgstr ""
+
+#: classes/a3-rslider-hook-filter.php:210
+msgid "a3 Portfolio"
+msgstr ""
+
+#: classes/a3-rslider-hook-filter.php:211
 msgid "WP Email Template"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:134
+#: classes/a3-rslider-hook-filter.php:212
 msgid "Contact Us Page - Contact People"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:135
+#: classes/a3-rslider-hook-filter.php:213
 msgid "Page View Count"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:147
+#: classes/a3-rslider-hook-filter.php:225
 msgid "Documentation"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:148
+#: classes/a3-rslider-hook-filter.php:226
 msgid "Support"
 msgstr ""
 

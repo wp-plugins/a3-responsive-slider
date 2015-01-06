@@ -2,8 +2,8 @@
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
-Tested up to: 4.0
-Stable tag: 1.1.1
+Tested up to: 4.1
+Stable tag: 1.1.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -154,6 +154,15 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.1.2 - 2015/01/06 =
+* Tweak - Only load plugin assets on post and page where slider is embedded by shortcode or as a widget.
+* Tweak - Only load assets on page that are required for slider effects - not all plugin js assets.
+* Tweak - Only load slider mobile assets when load in mobile screen.
+* Tweak - Audit code for full compatibility with WordPress version 4.1.0
+* Tweak - Updated plugins admin dashboard yellow border text. Removed reference to Free Trials.
+* Tweak - Added links to new a3 Lazy Load and a3 Portfolio plugins on wordpress.org
+* Fix - PHP Error notice undefined variable: slider_settings on slider edit admin page.
+
 = 1.1.1 - 2014/12/18 =
 * Tweak - added div tag to href= jQuery when click add image to slider gallery. Some plugins like MOJO Market Place plugin enforce div on image URLs site wide.
 * Credit - thanks to Bill Passawe for reporting the issue and giving us access to his site to find the issue and make a patch.
@@ -185,6 +194,9 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.1.2 =
+Upgrade now for slider load assets performance upgrade plus full compatibility with WordPress Version 4.1
 
 = 1.1.1 =
 Upgrade now for an image insert tweak.
