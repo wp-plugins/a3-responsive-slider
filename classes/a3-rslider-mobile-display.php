@@ -4,7 +4,7 @@ class A3_Responsive_Slider_Mobile_Display
 	public static function mobile_dispay_slider( $slide_items = array(), $is_used_mobile_skin = false , $slider_settings = array() ) {
 		
 		//require_once A3_RESPONSIVE_SLIDER_DIR . '/includes/mobile_detect.php';
-		$device_detect = new Mobile_Detect();
+		$device_detect = new A3_RSlider_Mobile_Detect();
 			
 		$slider_template = 'template-mobile';
 		$templateid = 'template_mobile';

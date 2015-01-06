@@ -76,7 +76,7 @@ jQuery(document).ready(function() {
     });
 	
     window.send_to_editor = function(html) {
-    	hrefurl = jQuery('img',html).attr('src');
+    	hrefurl = jQuery('img','<div>' + html + '</div>').attr('src');
         if( hrefurl.length == 0) {
         	hrefurl = jQuery(html).attr('href'); // We do this to get Links like PDF's
         }

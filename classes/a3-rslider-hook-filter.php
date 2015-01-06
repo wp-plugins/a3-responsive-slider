@@ -18,7 +18,7 @@ class A3_Responsive_Slider_Hook_Filter
 		wp_enqueue_script( 'a3-cycle2-script' );
 		
 		require_once A3_RESPONSIVE_SLIDER_DIR . '/includes/mobile_detect.php';
-		$device_detect = new Mobile_Detect();
+		$device_detect = new A3_RSlider_Mobile_Detect();
 		if ( ! $device_detect->isMobile() ) {
 			wp_register_script( 'a3-cycle2-flip-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.flip'. $suffix .'.js', array('jquery'), '2.1.2' );
 			wp_register_script( 'a3-cycle2-scrollVert-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.scrollVert'. $suffix .'.js', array('jquery'), '2.1.2' );
