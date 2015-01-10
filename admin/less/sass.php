@@ -18,7 +18,7 @@ class A3_Responsive_Slider_Less
 		if ( isset( $_POST['form_name_action'] ) ) {
             add_action( $this->plugin_name.'_settings_init', array ($this, 'plugin_build_sass') );
         }
-		add_action( 'wp_head', array ($this, 'apply_style_css_fontend') , 11 );
+		//add_action( 'wp_head', array ($this, 'apply_style_css_fontend') , 11 );
     }
 	
 	public function apply_style_css_fontend()
@@ -60,6 +60,14 @@ class A3_Responsive_Slider_Less
             @file_put_contents($_upload_dir['basedir'] . '/sass/' . $filename . '.css', '');
             @file_put_contents($_upload_dir['basedir'] . '/sass/' . $filename . '.min.css', '');
         }
+
+        $mixins = $this->css_file_name . '_mixins';
+        if( !file_exists( $_upload_dir['basedir'].'/sass/'.$mixins.'.less' ) ){
+            $mixinsless = $this->plugin_dir.'/admin/less/assets/css/mixins.less';
+            $a3rev_mixins_less = $_upload_dir['basedir'].'/sass/'.$mixins.'.less';
+            @copy($mixinsless, $a3rev_mixins_less);
+        }
+
         $files = array_diff(scandir($_upload_dir['basedir'] . '/sass'), array(
             '.',
             '..'
@@ -73,9 +81,9 @@ class A3_Responsive_Slider_Less
         $sass_data = '';
       
         if ($sass != '') {
-            
-            $sass_data = '@import "'.$this->plugin_dir.'/admin/less/assets/css/mixins.less";' . "\n";
-            
+
+            $sass_data = '@import "'.$mixins.'.less";' . "\n";
+
             $sass_data .= $sass;
             
             $sass_data = str_replace(':;', ': transparent;', $sass_data);

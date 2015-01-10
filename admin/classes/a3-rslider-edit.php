@@ -182,12 +182,10 @@ the <a href="%s" target="_blank">Pro Version Free Trail</a> to activate 2nd Slid
                                             <?php
                                             global $a3_rslider_template2_global_settings;
                                             global $a3_rslider_template_card_global_settings;
-                                            global $a3_rslider_template4_global_settings;
                                             
                                             foreach ( $slider_templates as $key => $val ) {
                                                 if ( $key == 'template-2' && $a3_rslider_template2_global_settings['is_activated'] != 1 ) continue;
                                                 elseif  ( $key == 'template-card' && $a3_rslider_template_card_global_settings['is_activated'] != 1 ) continue;
-                                                elseif  ( $key == 'template-4' && $a3_rslider_template4_global_settings['is_activated'] != 1 ) continue;
 												elseif  ( $key == 'template-mobile' ) continue;
                                                 ?>
                                                 <option value="" <?php

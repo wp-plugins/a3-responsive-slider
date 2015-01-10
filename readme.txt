@@ -3,7 +3,7 @@ Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -11,7 +11,9 @@ A robust and versatile responsive image slider for WordPress.
 
 == Description ==
 
-There are hundreds of image sliders for WordPress. We know because we have used a lot and none have ever completely been what we wanted. We built our own because we wanted a versatile and robust responsive slider that we could use in our client website work and more importantly that our clients could easily use on their site.
+There are hundreds of image sliders for WordPress. We know because we have used a lot and none have ever completely been what we wanted. We built our own because we wanted a versatile and robust responsive slider that we could use in our client website work and more importantly that our clients could easily use on their site. 
+
+a3 Responsive Slider is inspired by and powered by the [malsup Cycle2](https://github.com/malsup/cycle2) JavaScript.
 
 = Features =
 
@@ -27,10 +29,21 @@ There are hundreds of image sliders for WordPress. We know because we have used 
 * Shortcode tracking. See at a glance where each slider is embed by shortcode.
 * Remove sliders embedded by shortcode from the Slider Embed tab (removes the shortcode)
 * Slider images uploaded to WordPress Media Library.
-* There are 8 different transition effects.
+* There are 8 different image transition effects.
 * Transition effects set on each slider.
 * Extensively tested on live client sites before release
 
+= Lazy Load =
+
+Install the [a3 Lazy Load plugin](https://wordpress.org/plugins/a3-lazy-load/) to apply Lazy Load to your sliders first load. a3 Lazy Load will allow you to apply Lazy Load to any or all elements of your site for PCs and Mobiles including your a3 Responsive Sliders emabedded by shortcode or added by widgets.
+
+= Transiton Effects =
+Up to 8 different image effects. In addition to the normal Scroll horizonal and Vertical image transition the plugin includes the transition effects.
+
+* Flip - [see demo](http://jquery.malsup.com/cycle2/demo/flip.php)
+* Shuffle - [see demo](http://jquery.malsup.com/cycle2/demo/shuffle.php)
+* Tile Slide and Blind - [see demo](http://jquery.malsup.com/cycle2/demo/shuffle.php)
+ 
 = Featuring Sass (Simply Awesome Stylesheets) =
 
 * All the front end style display is created via [Sass](http://sass-lang.com/) for faster loader and render.
@@ -100,9 +113,6 @@ If you do a translation for your site please send it to us and we'll include it 
 *.po file (a3_responsive_slider.po) in languages folder for translations.
 * [Go here](http://a3rev.com/contact-us-page/) to send your translation files to us.
 
-= Plugin Resources =
-
-[PRO Version Free Trial](http://a3rev.com/shop/a3-responsive-slider/)
 
 == Installation ==
 
@@ -154,6 +164,15 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.1.3 - 2015/01/10 =
+* Tweak - Fix Slider skins first load UI when Dynamic height is activated for a skin
+* Tweak - Skin .css only load for the slider it is attached to and only load on urls where slider is embed or in widget - like js assets
+* Tweak - Edit for full compatibility with a3 Lazy Load. Only load skin when it comes into the view port like content
+* Tweak - Update Plugins description to include install a3 Lazy Load recommendation. 
+* Dev - Convert Sass Global .less to simplify compiling style sheet edits.
+* Fix - Show the new plugin version on the Core Update page. Feature stopped working with WordPress version 4.1
+* Fix - Sass compile path not saving on windows xampp.
+
 = 1.1.2 - 2015/01/06 =
 * Tweak - Only load plugin assets on post and page where slider is embedded by shortcode or as a widget.
 * Tweak - Only load assets on page that are required for slider effects - not all plugin js assets.
@@ -194,6 +213,9 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.1.3 =
+Upgrade your plugin now for tweaks that greatly improved slider first load UI, plus full compatibility with a3 Lazy Load and 2 bug fixes.
 
 = 1.1.2 =
 Upgrade now for slider load assets performance upgrade plus full compatibility with WordPress Version 4.1

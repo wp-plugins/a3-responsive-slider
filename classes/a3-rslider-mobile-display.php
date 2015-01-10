@@ -33,11 +33,16 @@ class A3_Responsive_Slider_Mobile_Display
 		}
 
 		ob_start();
+		if ( !is_admin() && function_exists( 'a3_lazy_load_enable' ) ) {
+			$lazy_load = '-lazyload';
+			$lazy_hidden = '<div class="a3-cycle-lazy-hidden lazy-hidden"></div>';
+		}
 	?>
     <div class="a3-slider-card-container-mobile a3-slider-card-container-basic-mobile-skin ">
 
     <div id="a3-rslider-container-<?php echo $unique_id; ?>" class="a3-rslider-container a3-rslider-<?php echo $slider_template; ?>" slider-id="<?php echo $unique_id; ?>" is-responsive="1" is-tall-dynamic="0" >
-    	<div style="height:150px" id="a3-cycle-slideshow-<?php echo $unique_id; ?>" class="cycle-slideshow a3-cycle-slideshow"
+    	<?php echo $lazy_hidden;?>
+    	<div style="height:150px" id="a3-cycle-slideshow-<?php echo $unique_id; ?>" class="cycle-slideshow<?php echo $lazy_load;?> a3-cycle-slideshow"
         	data-cycle-fx="<?php echo $fx; ?>"
             data-cycle-paused=true
             data-cycle-auto-height=container
@@ -52,6 +57,17 @@ class A3_Responsive_Slider_Mobile_Display
 
             data-cycle-loader=true
         >
+
+			<?php foreach ( $slide_items as $item ) { ?>
+				<?php if ( $item->is_video != 1 ) { ?>
+					<?php
+						$first_img = $item->img_url;
+						$_size = getimagesize( $first_img );
+					?>
+					<div class="cycle-sentinel"><img class="cycle-sentinel" style="width:<?php echo $_size[0]; ?>px; max-height:<?php echo $_size[1]; ?>px;" src="<?php echo esc_attr( $item->img_url ); ?>"></div>
+					<?php break; ?>
+				<?php } ?>
+			<?php } ?>
 
         	<div class="cycle-caption-container">
             	<div class="cycle-caption-inside">
@@ -82,7 +98,7 @@ class A3_Responsive_Slider_Mobile_Display
 					$img_description = '<div class="cycle-description">' . A3_Responsive_Slider_Functions::limit_words( stripslashes( $item->img_description ), $caption_lenght, '...' ) . '</div>';
 				}
 		?>
-                <img src="<?php echo esc_attr( $item->img_url ); ?>" title="" alt="" style="position:absolute; visibility:hidden; top:0; left:0;" />
+                <img class="a3-rslider-image" src="<?php echo esc_attr( $item->img_url ); ?>" title="" alt="" style="position:absolute; visibility:hidden; top:0; left:0;" />
 
         <?php } ?>
         </div>
@@ -101,6 +117,7 @@ class A3_Responsive_Slider_Mobile_Display
 			'video'    => false,
     	);
     	A3_Responsive_Slider_Hook_Filter::enqueue_frontend_script( $script_settings );
+    	$slider_output = apply_filters( 'a3_lazy_load_images', $slider_output, false );
 
 		return $slider_output;
 

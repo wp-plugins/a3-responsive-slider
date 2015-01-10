@@ -110,9 +110,17 @@ class A3_Responsive_Slider_Display
 
 		ob_start();
 	?>
-
+	<?php
+	$lazy_load = '';
+	$lazy_hidden = '';
+	if ( !is_admin() && function_exists( 'a3_lazy_load_enable' ) ) {
+		$lazy_load = '-lazyload';
+		$lazy_hidden = '<div class="a3-cycle-lazy-hidden lazy-hidden"></div>';
+	}
+	?>
     <div id="a3-rslider-container-<?php echo $unique_id; ?>" class="a3-rslider-container a3-rslider-<?php echo $slider_template; ?>" slider-id="<?php echo $unique_id; ?>" max-height="<?php echo $max_height; ?>" width-of-max-height="<?php echo $width_of_max_height; ?>" is-responsive="<?php echo $is_slider_responsive; ?>" is-tall-dynamic="<?php echo $is_slider_tall_dynamic; ?>" style=" <?php echo $rslider_custom_style; ?>" >
-    	<div style=" <?php echo $rslider_inline_style; ?>" id="a3-cycle-slideshow-<?php echo $unique_id; ?>" class="cycle-slideshow a3-cycle-slideshow <?php if ( $is_slider_tall_dynamic == 1 ) { ?>a3-cycle-slideshow-dynamic-tall<?php } ?>"
+    	<?php echo $lazy_hidden;?>
+    	<div style=" <?php echo $rslider_inline_style; ?>" id="a3-cycle-slideshow-<?php echo $unique_id; ?>" class="cycle-slideshow<?php echo $lazy_load;?> a3-cycle-slideshow <?php if ( $is_slider_tall_dynamic == 1 ) { ?>a3-cycle-slideshow-dynamic-tall<?php } ?>"
         	data-cycle-fx="<?php echo $fx; ?>"
             <?php echo $transition_attributes; ?>
 
@@ -145,6 +153,19 @@ class A3_Responsive_Slider_Display
 
             data-cycle-loader=true
         >
+
+			<?php if ( $is_slider_tall_dynamic == 1 ) { ?>
+				<?php foreach ( $slide_items as $item ) { ?>
+	        		<?php if ( $item->is_video != 1 ) { ?>
+						<?php
+							$first_img = $item->img_url;
+							$_size = getimagesize( $first_img );
+						?>
+			        	<div class="cycle-sentinel"><img class="cycle-sentinel" style="width:<?php echo $_size[0]; ?>px; max-height:<?php echo $_size[1]; ?>px;" src="<?php echo esc_attr( $item->img_url ); ?>"></div>
+						<?php break; ?>
+					<?php } ?>
+				<?php } ?>
+			<?php } ?>
 
         	<div class="a3-cycle-controls">
             	<span><a href="#" class="cycle-prev"><?php _e( 'Prev', 'a3_responsive_slider' ); ?></a></span>
@@ -230,6 +251,7 @@ class A3_Responsive_Slider_Display
 			'video'    => false,
     	);
     	A3_Responsive_Slider_Hook_Filter::enqueue_frontend_script( $script_settings );
+    	$slider_output = apply_filters( 'a3_lazy_load_images', $slider_output, false );
 
 		return $slider_output;
 
