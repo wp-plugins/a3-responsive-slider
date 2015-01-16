@@ -97,8 +97,13 @@ class A3_Responsive_Slider_Mobile_Display
 					$have_caption = true;
 					$img_description = '<div class="cycle-description">' . A3_Responsive_Slider_Functions::limit_words( stripslashes( $item->img_description ), $caption_lenght, '...' ) . '</div>';
 				}
+
+				$image_click = '';
+            	if ( trim( $item->img_link ) != '' ) {
+					$image_click = ' onclick="window.location=\''.esc_attr( trim( $item->img_link ) ).'\';" ';
+				}
 		?>
-                <img class="a3-rslider-image" src="<?php echo esc_attr( $item->img_url ); ?>" title="" alt="" style="position:absolute; visibility:hidden; top:0; left:0;" />
+                <img class="a3-rslider-image" <?php echo $image_click; ?> src="<?php echo esc_attr( $item->img_url ); ?>" title="" alt="" style="position:absolute; visibility:hidden; top:0; left:0;" />
 
         <?php } ?>
         </div>

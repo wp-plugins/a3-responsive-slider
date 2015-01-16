@@ -60,9 +60,11 @@ class A3_Responsive_Slider_Edit
 					A3_Responsive_Slider_Data::remove_slider_images( $slider_id );
 					$order = 0;
 					foreach ( $photo_galleries['image'] as $key => $images ) {
+						$show_readmore = 0;
+						if ( isset( $photo_galleries['show_readmore'][$key] ) ) $show_readmore = 1;
 						if ( ! isset( $photo_galleries['video_url'][$key] ) && trim( $images ) != '' ) {
 							$order++;
-							A3_Responsive_Slider_Data::insert_row_image( $slider_id, trim( $images ), $photo_galleries['link'][$key], $photo_galleries['title'][$key], $photo_galleries['text'][$key], $order );
+							A3_Responsive_Slider_Data::insert_row_image( $slider_id, trim( $images ), $photo_galleries['link'][$key], $photo_galleries['title'][$key], $photo_galleries['text'][$key], $order, $show_readmore );
 						}
 					}
 				}
@@ -962,10 +964,10 @@ the <a href="%s" target="_blank">Pro Version Free Trail</a> to activate 2nd Slid
 	}
 		
 	public static function galleries_render_image( $slider_settings, $i = 0, $item = array(), $new = false ) {
-		if ( @$item->video_url != '' && @$item->is_video == 1 ) {
+		if ( ! is_array( $item ) && $item->video_url != '' && $item->is_video == 1 ) {
 			$src = '';
 			$image_container = '<object><param value="'. A3_Responsive_Slider_Functions::get_youtube_url( $item->video_url ) .'&enablejsapi=1" name="movie"><param value="true" name="allowFullScreen"><param value="always" name="allowscriptaccess"><param value="opaque" name="wmode"><embed wmode="opaque" allowfullscreen="false" allowscriptaccess="always" type="application/x-shockwave-flash" src="'. A3_Responsive_Slider_Functions::get_youtube_url( $item->video_url ) .'&enablejsapi=1"></object>';
-		} elseif ( @$item->img_url != '' ) {
+		} elseif ( ! is_array( $item ) && $item->img_url != '' ) {
 			$src = $item->img_url;
 			$image_container = '<img class="galleries-image" id="galleries-image-'.$i.'" src="'.$src.'" alt="'.__( 'Add an Image', 'a3_responsive_slider' ).'">';
 		} else {
@@ -977,10 +979,10 @@ the <a href="%s" target="_blank">Pro Version Free Trail</a> to activate 2nd Slid
 			$hidden = $src;
 		}
 		?>
-		<tr class="<?php if( $new ) echo 'new';?> <?php if ( @$item->video_url != '' && @$item->is_video == 1 ) echo 'galleries-yt-row';?>" style=" <?php if ( empty( $slider_settings['support_youtube_videos'] ) && @$item->video_url != '' && @$item->is_video == 1 ) echo 'display:none'; ?>">
+		<tr class="<?php if( $new ) echo 'new';?> <?php if ( ! is_array( $item ) && $item->video_url != '' && $item->is_video == 1 ) echo 'galleries-yt-row';?>" style=" <?php if ( empty( $slider_settings['support_youtube_videos'] ) && ! is_array( $item ) && $item->video_url != '' && $item->is_video == 1 ) echo 'display:none'; ?>">
               <td>
                 <div class="image-wrapper">
-                <?php if ( @$item->video_url != '' && @$item->is_video == 1 ) { ?>
+                <?php if ( ! is_array( $item ) && $item->video_url != '' && $item->is_video == 1 ) { ?>
                 <?php echo $image_container; ?>
                 <?php } else { ?>
                 <a href="#" title="<?php _e( 'Add an Image', 'a3_responsive_slider' ); ?>" alt="galleries-image-<?php echo $i;?>" class="browse_upload galleries-image-<?php echo $i;?>-container"><?php echo $image_container; ?></a>
@@ -990,24 +992,34 @@ the <a href="%s" target="_blank">Pro Version Free Trail</a> to activate 2nd Slid
                 <div class="data-wrapper">
                 <div class="title-wrapper">
                   <label for="galleries-title-<?php echo $i;?>"><?php _e( 'Title', 'a3_responsive_slider' ); ?></label>
-                  <input type="text" class="galleries-title" id="galleries-title-<?php echo $i;?>" value="<?php echo stripcslashes( @$item->img_title );?>" name="photo_galleries[title][<?php echo $i;?>]">
+                  <input type="text" class="galleries-title" id="galleries-title-<?php echo $i;?>" value="<?php if ( ! is_array( $item ) ) echo stripcslashes( $item->img_title );?>" name="photo_galleries[title][<?php echo $i;?>]">
                 </div>
-                <?php if ( @$item->video_url != '' && @$item->is_video == 1 ) { ?>
+                <?php if ( ! is_array( $item ) && $item->video_url != '' && $item->is_video == 1 ) { ?>
                 <div style="clear:both"></div>
                 <div class="link-wrapper">
                   <label for="galleries-youtube-url-<?php echo $i;?>"><?php _e( 'Youtube Code', 'a3_responsive_slider' ); ?></label>
-                  <input type="text" class="galleries-link" id="galleries-youtube-url-<?php echo $i;?>" value="<?php echo @$item->video_url;?>" name="photo_galleries[video_url][<?php echo $i;?>]"> <span class="description" style="white-space:nowrap"><?php _e( 'Example', 'a3_responsive_slider' ); ?>: RBumgq5yVrA</span>
+                  <input type="text" class="galleries-link" id="galleries-youtube-url-<?php echo $i;?>" value="<?php if ( ! is_array( $item ) ) echo $item->video_url;?>" name="photo_galleries[video_url][<?php echo $i;?>]"> <span class="description" style="white-space:nowrap"><?php _e( 'Example', 'a3_responsive_slider' ); ?>: RBumgq5yVrA</span>
                 </div>
                 <?php } ?>
                 <div style="clear:both"></div>
                 <div class="link-wrapper">
                   <label for="galleries-link-<?php echo $i;?>"><?php _e( 'Link URL', 'a3_responsive_slider' ); ?></label>
-                  <input type="text" class="galleries-link" id="galleries-link-<?php echo $i;?>" value="<?php echo @$item->img_link;?>" name="photo_galleries[link][<?php echo $i;?>]">
+                  <input type="text" class="galleries-link" id="galleries-link-<?php echo $i;?>" value="<?php if ( ! is_array( $item ) ) echo $item->img_link;?>" name="photo_galleries[link][<?php echo $i;?>]">
                 </div>
                 <div style="clear:both"></div>
                 <div class="text-wrapper">
                   <label for="galleries-text-<?php echo $i;?>"><?php _e( 'Caption', 'a3_responsive_slider' ); ?></label>
-                  <textarea class="galleries-text" name="photo_galleries[text][<?php echo $i;?>]" id="galleries-text-<?php echo $i;?>"><?php echo stripslashes(@$item->img_description);?></textarea>
+                  <textarea class="galleries-text" name="photo_galleries[text][<?php echo $i;?>]" id="galleries-text-<?php echo $i;?>"><?php if ( ! is_array( $item ) ) echo stripslashes($item->img_description);?></textarea>
+                  <?php
+                  	$show_readmore = 0;
+                  	if ( isset( $item->show_readmore ) ) {
+                  		$show_readmore = $item->show_readmore;
+                  	}
+                  ?>
+                  <div class="galleries-readmore">
+                  	<label><input type="checkbox" <?php checked( 1, $show_readmore, true ); ?> name="photo_galleries[show_readmore][<?php echo $i;?>]" id="galleries-readmore-<?php echo $i;?>" value="1" /><?php _e( 'Show Read More Button/Text', 'a3_responsive_slider' ); ?></label>
+					<div class="desc"><?php echo __( 'Must have link URL and caption text for Read More button / text to show', 'a3_responsive_slider' ); ?></div>
+                  </div>
                 </div>
                 </div>
               </td>

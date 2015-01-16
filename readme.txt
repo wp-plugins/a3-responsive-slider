@@ -3,7 +3,7 @@ Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -11,7 +11,7 @@ A robust and versatile responsive image slider for WordPress.
 
 == Description ==
 
-There are hundreds of image sliders for WordPress. We know because we have used a lot and none have ever completely been what we wanted. We built our own because we wanted a versatile and robust responsive slider that we could use in our client website work and more importantly that our clients could easily use on their site. 
+There are hundreds of image sliders for WordPress. We know because we have used a lot and none have ever completely been what we wanted. We built our own because we wanted a versatile and robust responsive slider that we could use in our client website work and more importantly that our clients could easily use on their site.
 
 a3 Responsive Slider is inspired by and powered by the [malsup Cycle2](https://github.com/malsup/cycle2) JavaScript.
 
@@ -43,7 +43,7 @@ Up to 8 different image effects. In addition to the normal Scroll horizonal and 
 * Flip - [see demo](http://jquery.malsup.com/cycle2/demo/flip.php)
 * Shuffle - [see demo](http://jquery.malsup.com/cycle2/demo/shuffle.php)
 * Tile Slide and Blind - [see demo](http://jquery.malsup.com/cycle2/demo/shuffle.php)
- 
+
 = Featuring Sass (Simply Awesome Stylesheets) =
 
 * All the front end style display is created via [Sass](http://sass-lang.com/) for faster loader and render.
@@ -164,11 +164,24 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.1.4 - 2015/01/16 =
+* Feature - When link URL is added to an image in slider, click or tap on the image opens the link.
+* Tweak - Can now just add link URL to slider image without having to add caption text with Read More button to create the link.
+* Tweak - Read More option now activated from the image settings on slider edit page.
+* Tweak - Removed Read More ON | OFF option from the Read More tab on all skins.
+* Tweak - Added help text to the top of Read More tab page on each skin.
+* Tweak - Added Show read more button / text option for each slide in slider edit page
+* Tweak - Slider edit page image setting UI. Changed the Caption text box width that same as Title and Link URL input box.
+* Tweak - Show read more settings display to the right of the Caption text input box with help text.
+* Tweak - Added new show_readmore column for a3_rslider_images table database
+* Fix - Caption text not showing on slider images - updated .less file
+* Fix - Check $post before get post_content to fix PHP notice property of non-object on a3-rslider-hook-filter.php line 56
+
 = 1.1.3 - 2015/01/10 =
 * Tweak - Fix Slider skins first load UI when Dynamic height is activated for a skin
 * Tweak - Skin .css only load for the slider it is attached to and only load on urls where slider is embed or in widget - like js assets
 * Tweak - Edit for full compatibility with a3 Lazy Load. Only load skin when it comes into the view port like content
-* Tweak - Update Plugins description to include install a3 Lazy Load recommendation. 
+* Tweak - Update Plugins description to include install a3 Lazy Load recommendation.
 * Dev - Convert Sass Global .less to simplify compiling style sheet edits.
 * Fix - Show the new plugin version on the Core Update page. Feature stopped working with WordPress version 4.1
 * Fix - Sass compile path not saving on windows xampp.
@@ -213,6 +226,9 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.1.4 =
+Upgrade now for 1 new feature, 8 Code and UI Tweaks plus 2 bug fixes.
 
 = 1.1.3 =
 Upgrade your plugin now for tweaks that greatly improved slider first load UI, plus full compatibility with a3 Lazy Load and 2 bug fixes.

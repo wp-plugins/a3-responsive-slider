@@ -33,9 +33,6 @@
 .a3-cycle-slideshow {
     margin: auto;
     overflow:hidden;
-    .cycle-overlay-container {
-        display:none !important;
-    }
     img.a3-rslider-image.lazy-hidden {
         background: transparent;
     }
@@ -367,6 +364,8 @@ body {
     }
 }
 @media screen and (max-width :600px) {
+    .a3-cycle-slideshow .cycle-overlay-container { display:none !important;}
     .a3-rslider-container .cycle-overlay { display:none !important;}
     .a3-slider-video-slide div.cycle-youtube { height:0;}
+    .a3-slider-video-slide.cycle-slide-active div.cycle-youtube { height:100%; }
 }

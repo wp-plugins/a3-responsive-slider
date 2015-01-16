@@ -41,7 +41,7 @@ class A3_Responsive_Slider_Hook_Filter
 		global $post;
 		$our_shortcode = 'a3_responsive_slider';
 		// Check if a3_responsive_slider shortcode is in the content
-		if ( has_shortcode( $post->post_content, $our_shortcode ) ) {
+		if ( $post && has_shortcode( $post->post_content, $our_shortcode ) ) {
 			preg_match_all( '/' . get_shortcode_regex() . '/s', $post->post_content, $matches, PREG_SET_ORDER );
 			if ( ! empty( $matches ) && is_array( $matches ) && count( $matches ) > 0 ) {
 				foreach ( $matches as $shortcode ) {

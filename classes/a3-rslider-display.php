@@ -204,7 +204,7 @@ class A3_Responsive_Slider_Display
 				}
 
 				$read_more = '';
-				if ( trim( $item->img_link ) != '' && $enable_redmore_link == 1 ) {
+				if ( trim( $item->img_link ) != '' && $item->show_readmore == 1 ) {
 					$read_more_class = 'a3-rslider-read-more-link';
 					$read_more_text = $readmore_link_text;
 					if ( $readmore_bt_type == 'button' ) {
@@ -223,13 +223,13 @@ class A3_Responsive_Slider_Display
 		?>
 
         	<img class="a3-rslider-image" src="<?php echo esc_attr( $item->img_url ); ?>" name="<?php echo esc_attr( $img_title ); ?>" title="" data-cycle-desc="<?php echo esc_attr( $img_description ); ?>"
-            style="position:absolute; visibility:hidden; top:0; left:0; <?php if ( trim( $item->img_description ) == '' && trim( $item->img_link ) != '' ) { echo 'cursor:pointer;'; } ?>"
+            style="position:absolute; visibility:hidden; top:0; left:0; <?php if ( trim( $item->img_link ) != '' ) { echo 'cursor:pointer;'; } ?>"
             <?php
 				if ( $fx == 'random' ) {
 					echo A3_Responsive_Slider_Functions::get_transition_random( $slider_settings );
 				}
 
-				if ( trim( $item->img_description ) == '' && trim( $item->img_link ) != '' ) {
+				if ( trim( $item->img_link ) != '' ) {
 					echo ' onclick="window.location=\''.esc_attr( trim( $item->img_link ) ).'\';" ';
 				}
 			?>

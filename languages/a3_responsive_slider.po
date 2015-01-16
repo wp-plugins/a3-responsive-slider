@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: A3 Responsive Slider\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-06 10:55+0700\n"
-"PO-Revision-Date: 2015-01-06 10:55+0700\n"
+"POT-Creation-Date: 2015-01-16 17:07+0700\n"
+"PO-Revision-Date: 2015-01-16 17:07+0700\n"
 "Last-Translator: Nguyen Cong Tuan <mr.nguyencongtuan@gmail.com>\n"
 "Language-Team: a3rev\n"
 "Language: en\n"
@@ -97,7 +97,6 @@ msgstr ""
 #: admin/settings/template-1/pager-settings.php:193
 #: admin/settings/template-1/pager-settings.php:211
 #: admin/settings/template-1/pager-settings.php:217
-#: admin/settings/template-1/readmore-settings.php:192
 #: admin/settings/template-1/title-settings.php:193
 #: admin/settings/template-2/caption-settings.php:208
 #: admin/settings/template-2/control-settings.php:208
@@ -109,7 +108,6 @@ msgstr ""
 #: admin/settings/template-2/pager-settings.php:208
 #: admin/settings/template-2/pager-settings.php:226
 #: admin/settings/template-2/pager-settings.php:232
-#: admin/settings/template-2/readmore-settings.php:208
 #: admin/settings/template-2/title-settings.php:208
 #: admin/settings/template-card/caption-settings.php:208
 #: admin/settings/template-card/control-settings.php:208
@@ -121,7 +119,6 @@ msgstr ""
 #: admin/settings/template-card/pager-settings.php:208
 #: admin/settings/template-card/pager-settings.php:226
 #: admin/settings/template-card/pager-settings.php:232
-#: admin/settings/template-card/readmore-settings.php:208
 #: admin/settings/template-card/title-settings.php:208
 #: admin/settings/template-mobile/caption-settings.php:208
 #: admin/settings/template-mobile/pager-settings.php:208
@@ -135,7 +132,6 @@ msgstr ""
 #: admin/settings/template-widget/pager-settings.php:208
 #: admin/settings/template-widget/pager-settings.php:226
 #: admin/settings/template-widget/pager-settings.php:232
-#: admin/settings/template-widget/readmore-settings.php:208
 #: admin/settings/template-widget/title-settings.php:208
 msgid "ON"
 msgstr ""
@@ -153,7 +149,6 @@ msgstr ""
 #: admin/settings/template-1/pager-settings.php:194
 #: admin/settings/template-1/pager-settings.php:212
 #: admin/settings/template-1/pager-settings.php:218
-#: admin/settings/template-1/readmore-settings.php:193
 #: admin/settings/template-1/title-settings.php:194
 #: admin/settings/template-2/caption-settings.php:209
 #: admin/settings/template-2/control-settings.php:209
@@ -165,7 +160,6 @@ msgstr ""
 #: admin/settings/template-2/pager-settings.php:209
 #: admin/settings/template-2/pager-settings.php:227
 #: admin/settings/template-2/pager-settings.php:233
-#: admin/settings/template-2/readmore-settings.php:209
 #: admin/settings/template-2/title-settings.php:209
 #: admin/settings/template-card/caption-settings.php:209
 #: admin/settings/template-card/control-settings.php:209
@@ -177,7 +171,6 @@ msgstr ""
 #: admin/settings/template-card/pager-settings.php:209
 #: admin/settings/template-card/pager-settings.php:227
 #: admin/settings/template-card/pager-settings.php:233
-#: admin/settings/template-card/readmore-settings.php:209
 #: admin/settings/template-card/title-settings.php:209
 #: admin/settings/template-mobile/caption-settings.php:209
 #: admin/settings/template-mobile/pager-settings.php:209
@@ -191,7 +184,6 @@ msgstr ""
 #: admin/settings/template-widget/pager-settings.php:209
 #: admin/settings/template-widget/pager-settings.php:227
 #: admin/settings/template-widget/pager-settings.php:233
-#: admin/settings/template-widget/readmore-settings.php:209
 #: admin/settings/template-widget/title-settings.php:209
 msgid "OFF"
 msgstr ""
@@ -328,81 +320,81 @@ msgstr ""
 msgid "Pro Version"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:103
+#: admin/classes/a3-rslider-edit.php:105
 msgid "Slider name must not empty"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:106
+#: admin/classes/a3-rslider-edit.php:108
 msgid "Slider Successfully updated."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:108
+#: admin/classes/a3-rslider-edit.php:110
 msgid "Slider Successfully created."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:111 classes/a3-rslider-custom-post.php:38
+#: admin/classes/a3-rslider-edit.php:113 classes/a3-rslider-custom-post.php:38
 #: classes/a3-rslider-custom-post.php:39
 msgid "Add New Slider"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:112
+#: admin/classes/a3-rslider-edit.php:114
 msgid "Create"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:117 classes/a3-rslider-custom-post.php:41
+#: admin/classes/a3-rslider-edit.php:119 classes/a3-rslider-custom-post.php:41
 msgid "Edit Slider"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:119
+#: admin/classes/a3-rslider-edit.php:121
 msgid "Update"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:133 admin/classes/a3-rslider-edit.php:955
+#: admin/classes/a3-rslider-edit.php:135 admin/classes/a3-rslider-edit.php:955
 msgid "Add Video"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:134 admin/classes/a3-rslider-edit.php:956
+#: admin/classes/a3-rslider-edit.php:136 admin/classes/a3-rslider-edit.php:956
 msgid "Add Image"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:135 admin/classes/a3-rslider-edit.php:957
+#: admin/classes/a3-rslider-edit.php:137 admin/classes/a3-rslider-edit.php:957
 #: classes/a3-rslider-custom-post.php:294
 msgid "Preview"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:135 admin/classes/a3-rslider-edit.php:957
+#: admin/classes/a3-rslider-edit.php:137 admin/classes/a3-rslider-edit.php:957
 msgid "Preview Slider"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:140
+#: admin/classes/a3-rslider-edit.php:142
 msgid "Settings"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:141 admin/classes/a3-rslider-edit.php:277
+#: admin/classes/a3-rslider-edit.php:143 admin/classes/a3-rslider-edit.php:277
 msgid "Transition Effects"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:142
+#: admin/classes/a3-rslider-edit.php:144
 msgid "Shuffle Effect"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:143
+#: admin/classes/a3-rslider-edit.php:145
 msgid "Tile Effect"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:145
+#: admin/classes/a3-rslider-edit.php:147
 msgid "Embed"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:153
+#: admin/classes/a3-rslider-edit.php:155
 msgid "Slider Name"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:167
+#: admin/classes/a3-rslider-edit.php:169
 msgid "Slider Skin"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:174
+#: admin/classes/a3-rslider-edit.php:176
 #, php-format
 msgid ""
 "This Lite Version of the plugin has 1 skin available. Try \n"
@@ -410,7 +402,7 @@ msgid ""
 "2nd Slider Skin, Card Skin, Widget Skin and Touch Mobile Skin."
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:180
+#: admin/classes/a3-rslider-edit.php:182
 msgid "Select Template"
 msgstr ""
 
@@ -773,11 +765,19 @@ msgstr ""
 msgid "Caption"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:1016
+#: admin/classes/a3-rslider-edit.php:1020
+msgid "Show Read More Button/Text"
+msgstr ""
+
+#: admin/classes/a3-rslider-edit.php:1021
+msgid "Must have link URL and caption text for Read More button / text to show"
+msgstr ""
+
+#: admin/classes/a3-rslider-edit.php:1026
 msgid "Reorder Galleries Items"
 msgstr ""
 
-#: admin/classes/a3-rslider-edit.php:1016
+#: admin/classes/a3-rslider-edit.php:1026
 msgid "Delete Item"
 msgstr ""
 
@@ -888,9 +888,9 @@ msgstr ""
 #: admin/settings/template-1/pager-settings.php:250
 #: admin/settings/template-1/pager-settings.php:280
 #: admin/settings/template-1/pager-settings.php:300
-#: admin/settings/template-1/readmore-settings.php:299
-#: admin/settings/template-1/readmore-settings.php:306
-#: admin/settings/template-1/readmore-settings.php:314
+#: admin/settings/template-1/readmore-settings.php:289
+#: admin/settings/template-1/readmore-settings.php:296
+#: admin/settings/template-1/readmore-settings.php:304
 #: admin/settings/template-1/shortcode-settings.php:239
 #: admin/settings/template-1/slider-styles-settings.php:185
 #: admin/settings/template-1/title-settings.php:238
@@ -898,9 +898,9 @@ msgstr ""
 #: admin/settings/template-2/pager-settings.php:265
 #: admin/settings/template-2/pager-settings.php:295
 #: admin/settings/template-2/pager-settings.php:315
-#: admin/settings/template-2/readmore-settings.php:315
-#: admin/settings/template-2/readmore-settings.php:322
-#: admin/settings/template-2/readmore-settings.php:330
+#: admin/settings/template-2/readmore-settings.php:305
+#: admin/settings/template-2/readmore-settings.php:312
+#: admin/settings/template-2/readmore-settings.php:320
 #: admin/settings/template-2/shortcode-settings.php:254
 #: admin/settings/template-2/slider-styles-settings.php:200
 #: admin/settings/template-2/title-settings.php:253
@@ -908,18 +908,18 @@ msgstr ""
 #: admin/settings/template-card/pager-settings.php:265
 #: admin/settings/template-card/pager-settings.php:295
 #: admin/settings/template-card/pager-settings.php:315
-#: admin/settings/template-card/readmore-settings.php:315
-#: admin/settings/template-card/readmore-settings.php:322
-#: admin/settings/template-card/readmore-settings.php:330
+#: admin/settings/template-card/readmore-settings.php:305
+#: admin/settings/template-card/readmore-settings.php:312
+#: admin/settings/template-card/readmore-settings.php:320
 #: admin/settings/template-card/slider-styles-settings.php:229
 #: admin/settings/template-mobile/pager-settings.php:263
 #: admin/settings/template-mobile/slider-styles-settings.php:258
 #: admin/settings/template-widget/pager-settings.php:265
 #: admin/settings/template-widget/pager-settings.php:295
 #: admin/settings/template-widget/pager-settings.php:315
-#: admin/settings/template-widget/readmore-settings.php:315
-#: admin/settings/template-widget/readmore-settings.php:322
-#: admin/settings/template-widget/readmore-settings.php:330
+#: admin/settings/template-widget/readmore-settings.php:305
+#: admin/settings/template-widget/readmore-settings.php:312
+#: admin/settings/template-widget/readmore-settings.php:320
 #: admin/settings/template-widget/slider-styles-settings.php:258
 msgid "Default"
 msgstr ""
@@ -1387,75 +1387,79 @@ msgid "Read More Settings successfully reseted."
 msgstr ""
 
 #: admin/settings/template-1/readmore-settings.php:137
-#: admin/settings/template-1/readmore-settings.php:185
-#: admin/settings/template-1/readmore-settings.php:251
-#: admin/settings/template-1/readmore-settings.php:276
+#: admin/settings/template-1/readmore-settings.php:241
+#: admin/settings/template-1/readmore-settings.php:266
 #: admin/settings/template-2/readmore-settings.php:153
-#: admin/settings/template-2/readmore-settings.php:201
-#: admin/settings/template-2/readmore-settings.php:267
-#: admin/settings/template-2/readmore-settings.php:292
+#: admin/settings/template-2/readmore-settings.php:257
+#: admin/settings/template-2/readmore-settings.php:282
 #: admin/settings/template-card/readmore-settings.php:153
-#: admin/settings/template-card/readmore-settings.php:201
-#: admin/settings/template-card/readmore-settings.php:267
-#: admin/settings/template-card/readmore-settings.php:292
+#: admin/settings/template-card/readmore-settings.php:257
+#: admin/settings/template-card/readmore-settings.php:282
 #: admin/settings/template-widget/readmore-settings.php:153
-#: admin/settings/template-widget/readmore-settings.php:201
-#: admin/settings/template-widget/readmore-settings.php:267
-#: admin/settings/template-widget/readmore-settings.php:292
+#: admin/settings/template-widget/readmore-settings.php:257
+#: admin/settings/template-widget/readmore-settings.php:282
 #: admin/tabs/card-skin/readmore-tab.php:78
 #: admin/tabs/template-widget/readmore-tab.php:78
 msgid "Read More"
 msgstr ""
 
 #: admin/settings/template-1/readmore-settings.php:181
-#: admin/settings/template-2/readmore-settings.php:197
-#: admin/settings/template-card/readmore-settings.php:197
-#: admin/settings/template-widget/readmore-settings.php:197
-msgid "Read More Settings"
+msgid "Read More Style"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:197
-#: admin/settings/template-2/readmore-settings.php:213
-#: admin/settings/template-card/readmore-settings.php:213
-#: admin/settings/template-widget/readmore-settings.php:213
+#: admin/settings/template-1/readmore-settings.php:183
+#: admin/settings/template-2/readmore-settings.php:199
+#: admin/settings/template-card/readmore-settings.php:199
+#: admin/settings/template-widget/readmore-settings.php:199
+msgid ""
+"The Read More button / Text only shows on a slider image when you have "
+"entered an image link url, caption text and checked the show Read More "
+"button / text box. The read more button text shows at the end of the caption "
+"text."
+msgstr ""
+
+#: admin/settings/template-1/readmore-settings.php:187
+#: admin/settings/template-2/readmore-settings.php:203
+#: admin/settings/template-card/readmore-settings.php:203
+#: admin/settings/template-widget/readmore-settings.php:203
 msgid "Button/Hyperlink"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:202
-#: admin/settings/template-2/readmore-settings.php:218
-#: admin/settings/template-card/readmore-settings.php:218
-#: admin/settings/template-widget/readmore-settings.php:218
+#: admin/settings/template-1/readmore-settings.php:192
+#: admin/settings/template-2/readmore-settings.php:208
+#: admin/settings/template-card/readmore-settings.php:208
+#: admin/settings/template-widget/readmore-settings.php:208
 msgid "Button or Hyperlink Type"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:209
-#: admin/settings/template-2/readmore-settings.php:225
-#: admin/settings/template-card/readmore-settings.php:225
-#: admin/settings/template-widget/readmore-settings.php:225
+#: admin/settings/template-1/readmore-settings.php:199
+#: admin/settings/template-2/readmore-settings.php:215
+#: admin/settings/template-card/readmore-settings.php:215
+#: admin/settings/template-widget/readmore-settings.php:215
 msgid "Button"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:210
-#: admin/settings/template-2/readmore-settings.php:226
-#: admin/settings/template-card/readmore-settings.php:226
-#: admin/settings/template-widget/readmore-settings.php:226
+#: admin/settings/template-1/readmore-settings.php:200
+#: admin/settings/template-2/readmore-settings.php:216
+#: admin/settings/template-card/readmore-settings.php:216
+#: admin/settings/template-widget/readmore-settings.php:216
 msgid "Hyperlink"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:213
-#: admin/settings/template-2/readmore-settings.php:229
-#: admin/settings/template-card/readmore-settings.php:229
-#: admin/settings/template-widget/readmore-settings.php:229
+#: admin/settings/template-1/readmore-settings.php:203
+#: admin/settings/template-2/readmore-settings.php:219
+#: admin/settings/template-card/readmore-settings.php:219
+#: admin/settings/template-widget/readmore-settings.php:219
 msgid "Button or Hyperlink Margin"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:219
+#: admin/settings/template-1/readmore-settings.php:209
 #: admin/settings/template-1/shortcode-settings.php:215
-#: admin/settings/template-2/readmore-settings.php:235
+#: admin/settings/template-2/readmore-settings.php:225
 #: admin/settings/template-2/shortcode-settings.php:230
 #: admin/settings/template-card/caption-settings.php:223
 #: admin/settings/template-card/card-footer-settings.php:207
-#: admin/settings/template-card/readmore-settings.php:235
+#: admin/settings/template-card/readmore-settings.php:225
 #: admin/settings/template-card/slider-styles-settings.php:205
 #: admin/settings/template-card/title-settings.php:224
 #: admin/settings/template-mobile/caption-settings.php:223
@@ -1464,20 +1468,20 @@ msgstr ""
 #: admin/settings/template-mobile/slider-styles-settings.php:234
 #: admin/settings/template-mobile/title-settings.php:223
 #: admin/settings/template-widget/caption-settings.php:234
-#: admin/settings/template-widget/readmore-settings.php:235
+#: admin/settings/template-widget/readmore-settings.php:225
 #: admin/settings/template-widget/slider-styles-settings.php:205
 #: admin/settings/template-widget/slider-styles-settings.php:234
 #: admin/settings/template-widget/title-settings.php:234
 msgid "Top"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:224
+#: admin/settings/template-1/readmore-settings.php:214
 #: admin/settings/template-1/shortcode-settings.php:220
-#: admin/settings/template-2/readmore-settings.php:240
+#: admin/settings/template-2/readmore-settings.php:230
 #: admin/settings/template-2/shortcode-settings.php:235
 #: admin/settings/template-card/caption-settings.php:228
 #: admin/settings/template-card/card-footer-settings.php:212
-#: admin/settings/template-card/readmore-settings.php:240
+#: admin/settings/template-card/readmore-settings.php:230
 #: admin/settings/template-card/slider-styles-settings.php:210
 #: admin/settings/template-card/title-settings.php:229
 #: admin/settings/template-mobile/caption-settings.php:228
@@ -1486,22 +1490,22 @@ msgstr ""
 #: admin/settings/template-mobile/slider-styles-settings.php:239
 #: admin/settings/template-mobile/title-settings.php:228
 #: admin/settings/template-widget/caption-settings.php:239
-#: admin/settings/template-widget/readmore-settings.php:240
+#: admin/settings/template-widget/readmore-settings.php:230
 #: admin/settings/template-widget/slider-styles-settings.php:210
 #: admin/settings/template-widget/slider-styles-settings.php:239
 #: admin/settings/template-widget/title-settings.php:239
 msgid "Bottom"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:230
+#: admin/settings/template-1/readmore-settings.php:220
 #: admin/settings/template-1/shortcode-settings.php:190
 #: admin/settings/template-1/shortcode-settings.php:226
-#: admin/settings/template-2/readmore-settings.php:246
+#: admin/settings/template-2/readmore-settings.php:236
 #: admin/settings/template-2/shortcode-settings.php:205
 #: admin/settings/template-2/shortcode-settings.php:241
 #: admin/settings/template-card/caption-settings.php:234
 #: admin/settings/template-card/card-footer-settings.php:218
-#: admin/settings/template-card/readmore-settings.php:246
+#: admin/settings/template-card/readmore-settings.php:236
 #: admin/settings/template-card/slider-styles-settings.php:216
 #: admin/settings/template-card/title-settings.php:235
 #: admin/settings/template-mobile/caption-settings.php:234
@@ -1510,7 +1514,7 @@ msgstr ""
 #: admin/settings/template-mobile/slider-styles-settings.php:245
 #: admin/settings/template-mobile/title-settings.php:234
 #: admin/settings/template-widget/caption-settings.php:245
-#: admin/settings/template-widget/readmore-settings.php:246
+#: admin/settings/template-widget/readmore-settings.php:236
 #: admin/settings/template-widget/slider-styles-settings.php:216
 #: admin/settings/template-widget/slider-styles-settings.php:245
 #: admin/settings/template-widget/title-settings.php:245
@@ -1519,15 +1523,15 @@ msgstr ""
 msgid "Left"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:236
+#: admin/settings/template-1/readmore-settings.php:226
 #: admin/settings/template-1/shortcode-settings.php:192
 #: admin/settings/template-1/shortcode-settings.php:232
-#: admin/settings/template-2/readmore-settings.php:252
+#: admin/settings/template-2/readmore-settings.php:242
 #: admin/settings/template-2/shortcode-settings.php:207
 #: admin/settings/template-2/shortcode-settings.php:247
 #: admin/settings/template-card/caption-settings.php:240
 #: admin/settings/template-card/card-footer-settings.php:224
-#: admin/settings/template-card/readmore-settings.php:252
+#: admin/settings/template-card/readmore-settings.php:242
 #: admin/settings/template-card/slider-styles-settings.php:222
 #: admin/settings/template-card/title-settings.php:241
 #: admin/settings/template-mobile/caption-settings.php:240
@@ -1536,7 +1540,7 @@ msgstr ""
 #: admin/settings/template-mobile/slider-styles-settings.php:251
 #: admin/settings/template-mobile/title-settings.php:240
 #: admin/settings/template-widget/caption-settings.php:251
-#: admin/settings/template-widget/readmore-settings.php:252
+#: admin/settings/template-widget/readmore-settings.php:242
 #: admin/settings/template-widget/slider-styles-settings.php:222
 #: admin/settings/template-widget/slider-styles-settings.php:251
 #: admin/settings/template-widget/title-settings.php:251
@@ -1545,115 +1549,115 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:243
-#: admin/settings/template-2/readmore-settings.php:259
-#: admin/settings/template-card/readmore-settings.php:259
-#: admin/settings/template-widget/readmore-settings.php:259
+#: admin/settings/template-1/readmore-settings.php:233
+#: admin/settings/template-2/readmore-settings.php:249
+#: admin/settings/template-card/readmore-settings.php:249
+#: admin/settings/template-widget/readmore-settings.php:249
 msgid "Hyperlink Styling"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:248
-#: admin/settings/template-2/readmore-settings.php:264
-#: admin/settings/template-card/readmore-settings.php:264
-#: admin/settings/template-widget/readmore-settings.php:264
+#: admin/settings/template-1/readmore-settings.php:238
+#: admin/settings/template-2/readmore-settings.php:254
+#: admin/settings/template-card/readmore-settings.php:254
+#: admin/settings/template-widget/readmore-settings.php:254
 msgid "Hyperlink Text"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:254
-#: admin/settings/template-2/readmore-settings.php:270
-#: admin/settings/template-card/readmore-settings.php:270
-#: admin/settings/template-widget/readmore-settings.php:270
+#: admin/settings/template-1/readmore-settings.php:244
+#: admin/settings/template-2/readmore-settings.php:260
+#: admin/settings/template-card/readmore-settings.php:260
+#: admin/settings/template-widget/readmore-settings.php:260
 msgid "Hyperlink Font"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:261
-#: admin/settings/template-2/readmore-settings.php:277
-#: admin/settings/template-card/readmore-settings.php:277
-#: admin/settings/template-widget/readmore-settings.php:277
+#: admin/settings/template-1/readmore-settings.php:251
+#: admin/settings/template-2/readmore-settings.php:267
+#: admin/settings/template-card/readmore-settings.php:267
+#: admin/settings/template-widget/readmore-settings.php:267
 msgid "Hyperlink hover Colour"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:268
-#: admin/settings/template-2/readmore-settings.php:284
-#: admin/settings/template-card/readmore-settings.php:284
-#: admin/settings/template-widget/readmore-settings.php:284
+#: admin/settings/template-1/readmore-settings.php:258
+#: admin/settings/template-2/readmore-settings.php:274
+#: admin/settings/template-card/readmore-settings.php:274
+#: admin/settings/template-widget/readmore-settings.php:274
 msgid "Button Styling"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:273
-#: admin/settings/template-2/readmore-settings.php:289
-#: admin/settings/template-card/readmore-settings.php:289
-#: admin/settings/template-widget/readmore-settings.php:289
+#: admin/settings/template-1/readmore-settings.php:263
+#: admin/settings/template-2/readmore-settings.php:279
+#: admin/settings/template-card/readmore-settings.php:279
+#: admin/settings/template-widget/readmore-settings.php:279
 msgid "Button Text"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:279
-#: admin/settings/template-2/readmore-settings.php:295
-#: admin/settings/template-card/readmore-settings.php:295
-#: admin/settings/template-widget/readmore-settings.php:295
+#: admin/settings/template-1/readmore-settings.php:269
+#: admin/settings/template-2/readmore-settings.php:285
+#: admin/settings/template-card/readmore-settings.php:285
+#: admin/settings/template-widget/readmore-settings.php:285
 msgid "Button Padding"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:280
-#: admin/settings/template-2/readmore-settings.php:296
-#: admin/settings/template-card/readmore-settings.php:296
-#: admin/settings/template-widget/readmore-settings.php:296
+#: admin/settings/template-1/readmore-settings.php:270
+#: admin/settings/template-2/readmore-settings.php:286
+#: admin/settings/template-card/readmore-settings.php:286
+#: admin/settings/template-widget/readmore-settings.php:286
 msgid "Padding from Button text to Button border"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:285
-#: admin/settings/template-2/readmore-settings.php:301
-#: admin/settings/template-card/readmore-settings.php:301
-#: admin/settings/template-widget/readmore-settings.php:301
+#: admin/settings/template-1/readmore-settings.php:275
+#: admin/settings/template-2/readmore-settings.php:291
+#: admin/settings/template-card/readmore-settings.php:291
+#: admin/settings/template-widget/readmore-settings.php:291
 msgid "Top/Bottom"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:291
-#: admin/settings/template-2/readmore-settings.php:307
-#: admin/settings/template-card/readmore-settings.php:307
-#: admin/settings/template-widget/readmore-settings.php:307
+#: admin/settings/template-1/readmore-settings.php:281
+#: admin/settings/template-2/readmore-settings.php:297
+#: admin/settings/template-card/readmore-settings.php:297
+#: admin/settings/template-widget/readmore-settings.php:297
 msgid "Left/Right"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:298
-#: admin/settings/template-2/readmore-settings.php:314
-#: admin/settings/template-card/readmore-settings.php:314
-#: admin/settings/template-widget/readmore-settings.php:314
+#: admin/settings/template-1/readmore-settings.php:288
+#: admin/settings/template-2/readmore-settings.php:304
+#: admin/settings/template-card/readmore-settings.php:304
+#: admin/settings/template-widget/readmore-settings.php:304
 msgid "Background Colour"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:305
-#: admin/settings/template-2/readmore-settings.php:321
-#: admin/settings/template-card/readmore-settings.php:321
-#: admin/settings/template-widget/readmore-settings.php:321
+#: admin/settings/template-1/readmore-settings.php:295
+#: admin/settings/template-2/readmore-settings.php:311
+#: admin/settings/template-card/readmore-settings.php:311
+#: admin/settings/template-widget/readmore-settings.php:311
 msgid "Background Colour Gradient From"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:313
-#: admin/settings/template-2/readmore-settings.php:329
-#: admin/settings/template-card/readmore-settings.php:329
-#: admin/settings/template-widget/readmore-settings.php:329
+#: admin/settings/template-1/readmore-settings.php:303
+#: admin/settings/template-2/readmore-settings.php:319
+#: admin/settings/template-card/readmore-settings.php:319
+#: admin/settings/template-widget/readmore-settings.php:319
 msgid "Background Colour Gradient To"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:320
-#: admin/settings/template-2/readmore-settings.php:336
-#: admin/settings/template-card/readmore-settings.php:336
-#: admin/settings/template-widget/readmore-settings.php:336
+#: admin/settings/template-1/readmore-settings.php:310
+#: admin/settings/template-2/readmore-settings.php:326
+#: admin/settings/template-card/readmore-settings.php:326
+#: admin/settings/template-widget/readmore-settings.php:326
 msgid "Button Border"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:326
-#: admin/settings/template-2/readmore-settings.php:342
-#: admin/settings/template-card/readmore-settings.php:342
-#: admin/settings/template-widget/readmore-settings.php:342
+#: admin/settings/template-1/readmore-settings.php:316
+#: admin/settings/template-2/readmore-settings.php:332
+#: admin/settings/template-card/readmore-settings.php:332
+#: admin/settings/template-widget/readmore-settings.php:332
 msgid "Button Font"
 msgstr ""
 
-#: admin/settings/template-1/readmore-settings.php:332
-#: admin/settings/template-2/readmore-settings.php:348
-#: admin/settings/template-card/readmore-settings.php:348
-#: admin/settings/template-widget/readmore-settings.php:348
+#: admin/settings/template-1/readmore-settings.php:322
+#: admin/settings/template-2/readmore-settings.php:338
+#: admin/settings/template-card/readmore-settings.php:338
+#: admin/settings/template-widget/readmore-settings.php:338
 msgid "Button Shadow"
 msgstr ""
 
@@ -1865,6 +1869,12 @@ msgstr ""
 #: admin/settings/template-2/global-settings.php:208
 #: admin/settings/template-card/global-settings.php:200
 msgid "Activate Template"
+msgstr ""
+
+#: admin/settings/template-2/readmore-settings.php:197
+#: admin/settings/template-card/readmore-settings.php:197
+#: admin/settings/template-widget/readmore-settings.php:197
+msgid "Read More Settings"
 msgstr ""
 
 #: admin/settings/template-card/caption-settings.php:217
@@ -2139,19 +2149,19 @@ msgstr ""
 msgid "Slides "
 msgstr ""
 
-#: classes/a3-rslider-display.php:150
+#: classes/a3-rslider-display.php:171
 msgid "Prev"
 msgstr ""
 
-#: classes/a3-rslider-display.php:151
+#: classes/a3-rslider-display.php:172
 msgid "Next"
 msgstr ""
 
-#: classes/a3-rslider-display.php:152
+#: classes/a3-rslider-display.php:173
 msgid "Pause"
 msgstr ""
 
-#: classes/a3-rslider-display.php:153
+#: classes/a3-rslider-display.php:174
 msgid "Play"
 msgstr ""
 
@@ -2240,110 +2250,110 @@ msgstr ""
 msgid "Tile Blind"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:182
+#: classes/a3-rslider-hook-filter.php:192
 msgid "Thanks for choosing to install the a3 Responsive Slider Lite."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:183
+#: classes/a3-rslider-hook-filter.php:193
 msgid "What is the Yellow border sections about?"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:184
+#: classes/a3-rslider-hook-filter.php:194
 msgid ""
 "Inside the Yellow border you will see the settings for the a3 Responsive "
 "Slider Pro version plugin. You can see the settings but they are not active."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:186
+#: classes/a3-rslider-hook-filter.php:196
 msgid "a3 Responsive Slider Pro"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:188
+#: classes/a3-rslider-hook-filter.php:198
 msgid "Activates Youtube Video Slides."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:189
+#: classes/a3-rslider-hook-filter.php:199
 msgid "Activates Ken Burns transition Effect."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:190
+#: classes/a3-rslider-hook-filter.php:200
 msgid "Activates the 2nd custom Slider Skin."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:191
+#: classes/a3-rslider-hook-filter.php:201
 msgid "Activates the custom Card Skin."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:192
+#: classes/a3-rslider-hook-filter.php:202
 msgid "Activates the custom Widget Skin."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:193
+#: classes/a3-rslider-hook-filter.php:203
 msgid "Activates the custom Touch Mobile Skin."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:194
+#: classes/a3-rslider-hook-filter.php:204
 msgid "Access to the plugins a3rev support forum."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:197
+#: classes/a3-rslider-hook-filter.php:207
 msgid "If you are trailing the Pro version must:"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:199
+#: classes/a3-rslider-hook-filter.php:209
 msgid "DEACTIVATE the Lite BEFORE installing and activating another version."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:200
+#: classes/a3-rslider-hook-filter.php:210
 msgid "If you don't you will get a FATAL ERROR."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:201
+#: classes/a3-rslider-hook-filter.php:211
 msgid ""
 "All data - sliders, settings and activations will be present in the newly "
 "activated version."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:202
+#: classes/a3-rslider-hook-filter.php:212
 msgid ""
 "WARNING - If you DELETE this plugin BEFORE you activate another version of "
 "the slider, all slider settings will be lost."
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:206
+#: classes/a3-rslider-hook-filter.php:216
 msgid "More a3rev Free WordPress plugins"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:209
+#: classes/a3-rslider-hook-filter.php:219
 msgid "a3 Lazy Load"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:209
-#: classes/a3-rslider-hook-filter.php:210
+#: classes/a3-rslider-hook-filter.php:219
+#: classes/a3-rslider-hook-filter.php:220
 msgid "New Plugin"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:210
+#: classes/a3-rslider-hook-filter.php:220
 msgid "a3 Portfolio"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:211
+#: classes/a3-rslider-hook-filter.php:221
 msgid "WP Email Template"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:212
+#: classes/a3-rslider-hook-filter.php:222
 msgid "Contact Us Page - Contact People"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:213
+#: classes/a3-rslider-hook-filter.php:223
 msgid "Page View Count"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:225
+#: classes/a3-rslider-hook-filter.php:235
 msgid "Documentation"
 msgstr ""
 
-#: classes/a3-rslider-hook-filter.php:226
+#: classes/a3-rslider-hook-filter.php:236
 msgid "Support"
 msgstr ""
 
