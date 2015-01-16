@@ -170,12 +170,12 @@ The manual installation method involves down loading our plugin and uploading it
 * Tweak - Read More option now activated from the image settings on slider edit page.
 * Tweak - Removed Read More ON | OFF option from the Read More tab on all skins.
 * Tweak - Added help text to the top of Read More tab page on each skin.
-* Tweak - Added Show read more button / text option for each slide in slider edit page
+* Tweak - Added Show read more button / text option for each slide in slider edit page.
 * Tweak - Slider edit page image setting UI. Changed the Caption text box width that same as Title and Link URL input box.
 * Tweak - Show read more settings display to the right of the Caption text input box with help text.
-* Tweak - Added new show_readmore column for a3_rslider_images table database
-* Fix - Caption text not showing on slider images - updated .less file
-* Fix - Check $post before get post_content to fix PHP notice property of non-object on a3-rslider-hook-filter.php line 56
+* Tweak - Added new show_readmore column for a3_rslider_images table database.
+* Fix - Caption text not showing on slider images - updated .less file.
+* Fix - Check $post before get post_content to fix PHP notice property of non-object on a3-rslider-hook-filter.php line 56.
 
 = 1.1.3 - 2015/01/10 =
 * Tweak - Fix Slider skins first load UI when Dynamic height is activated for a skin
