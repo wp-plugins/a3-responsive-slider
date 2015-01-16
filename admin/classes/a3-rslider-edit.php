@@ -112,6 +112,7 @@ class A3_Responsive_Slider_Edit
 		$my_button = __( 'Create', 'a3_responsive_slider' );
 		$my_button_act = 'bt_create';
 		$slider = false;
+		$slider_settings = array();
 		if ( $slider_id != 0 ) {
 			$my_title = __( 'Edit Slider', 'a3_responsive_slider' );
 			$slider = true;
@@ -181,12 +182,10 @@ the <a href="%s" target="_blank">Pro Version Free Trail</a> to activate 2nd Slid
                                             <?php
                                             global $a3_rslider_template2_global_settings;
                                             global $a3_rslider_template_card_global_settings;
-                                            global $a3_rslider_template4_global_settings;
                                             
                                             foreach ( $slider_templates as $key => $val ) {
                                                 if ( $key == 'template-2' && $a3_rslider_template2_global_settings['is_activated'] != 1 ) continue;
                                                 elseif  ( $key == 'template-card' && $a3_rslider_template_card_global_settings['is_activated'] != 1 ) continue;
-                                                elseif  ( $key == 'template-4' && $a3_rslider_template4_global_settings['is_activated'] != 1 ) continue;
 												elseif  ( $key == 'template-mobile' ) continue;
                                                 ?>
                                                 <option value="" <?php
@@ -978,7 +977,7 @@ the <a href="%s" target="_blank">Pro Version Free Trail</a> to activate 2nd Slid
 			$hidden = $src;
 		}
 		?>
-		<tr class="<?php if( $new ) echo 'new';?> <?php if ( @$item->video_url != '' && @$item->is_video == 1 ) echo 'galleries-yt-row';?>" style=" <?php if ( $slider_settings['support_youtube_videos'] == 0 && @$item->video_url != '' && @$item->is_video == 1 ) echo 'display:none'; ?>">
+		<tr class="<?php if( $new ) echo 'new';?> <?php if ( @$item->video_url != '' && @$item->is_video == 1 ) echo 'galleries-yt-row';?>" style=" <?php if ( empty( $slider_settings['support_youtube_videos'] ) && @$item->video_url != '' && @$item->is_video == 1 ) echo 'display:none'; ?>">
               <td>
                 <div class="image-wrapper">
                 <?php if ( @$item->video_url != '' && @$item->is_video == 1 ) { ?>

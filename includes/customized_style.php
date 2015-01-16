@@ -39,6 +39,7 @@ foreach ( $list_templates as $template_key => $template_name ) {
 ?>
 .a3-rslider-<?php echo $template_key; ?>.a3-rslider-container {
 	width: <?php echo $slider_container_wide; ?>;
+	max-width: 100%;
 }
 .a3-rslider-<?php echo $template_key; ?> .a3-cycle-slideshow {
 	height: <?php echo $slider_container_tall; ?>;
