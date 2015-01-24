@@ -3,7 +3,7 @@ Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -164,6 +164,11 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.1.5 - 2015/01/24 =
+* Tweak - Added str_replace( array("\r\n", "\r", "\n"), '', $slider_output) to prevent Themes and plugins that process shortcodes from adding line break br and paragraph p tags to Slider shortcodes and breaking them.
+* Tweak - Changed add_action( 'wp_enqueue_scripts' ) to add_action( 'wp_head' ) for fixed the video don't work if have some plugin filter video tag for comaptibility with Pro Version upgrade.
+* Tweak - Updated a3-rslider-frontend.js and a3-rslider-frontend-mobile.js for compatibility with Pro Version upgrade.
+
 = 1.1.4 - 2015/01/16 =
 * Feature - When link URL is added to an image in slider, click or tap on the image opens the link.
 * Tweak - Can now just add link URL to slider image without having to add caption text with Read More button to create the link.
@@ -226,6 +231,9 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.1.5 =
+Upgrade now for 3 code tweaks which could be important depending on your site configuration.
 
 = 1.1.4 =
 Upgrade now for 1 new feature, 8 Code and UI Tweaks plus 2 bug fixes.

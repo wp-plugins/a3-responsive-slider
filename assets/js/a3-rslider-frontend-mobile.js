@@ -8,11 +8,11 @@ $(function(){
 			}, 700 );
 		}
 		$(".a3-cycle-slideshow img.a3-rslider-image").on('lazyload', function(){
-			$(this).parent('.a3-cycle-slideshow').on( 'cycle-pre-initialize', function( event, opts ) {
+			$(this).parents('.a3-cycle-slideshow').on( 'cycle-pre-initialize', function( event, opts ) {
 				$(this).parent().addClass('cycle-pre-initialized');
 				removeLazyHidden();
 			});
-			$(this).parent('.a3-cycle-slideshow').cycle();
+			$(this).parents('.a3-cycle-slideshow').cycle();
 		}).lazyLoadXT();
 	}
 });

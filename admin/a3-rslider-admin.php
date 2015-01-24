@@ -2,7 +2,7 @@
 update_option('a3rev_rslider_plugin', 'a3_responsive_slider');
 
 function a3_rslider_activated(){
-	update_option('a3rev_rslider_version', '1.1.4');
+	update_option('a3rev_rslider_version', '1.1.5');
 
 	// Set Settings Default from Admin Init
 	global $a3_responsive_slider_admin_init;
@@ -50,7 +50,7 @@ add_action( 'admin_enqueue_scripts', array( 'A3_Responsive_Slider_Hook_Filter', 
 
 	add_action( 'init', array( 'A3_Responsive_Slider_Edit', 'slider_form_action' ) );
 
-	add_action( 'wp_enqueue_scripts', array( 'A3_Responsive_Slider_Hook_Filter', 'include_frontend_script' ), 11 );
+	add_action( 'wp_head', array( 'A3_Responsive_Slider_Hook_Filter', 'include_frontend_script' ), 10 );
 
 	// Include google fonts into header
 	add_action( 'wp_head', array( 'A3_Responsive_Slider_Hook_Filter', 'add_google_fonts'), 10 );
@@ -142,7 +142,7 @@ function a3_rslider_upgrade_plugin () {
 		update_option('a3rev_rslider_version', '1.1.4');
 	}
 
-	update_option('a3rev_rslider_version', '1.1.4');
+	update_option('a3rev_rslider_version', '1.1.5');
 }
 
 	// Template Tag for Developer use to put into php code

@@ -115,6 +115,8 @@ class A3_Responsive_Slider_Mobile_Display
     <?php
 		$slider_output = ob_get_clean();
 
+		$slider_output = str_replace( array("\r\n", "\r", "\n"), '', $slider_output );
+
 		$script_settings = array(
 			'fx'       => 'scrollHorz',
 			'caption2' => $have_caption,

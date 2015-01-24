@@ -113,7 +113,7 @@ class A3_Responsive_Slider_Display
 	<?php
 	$lazy_load = '';
 	$lazy_hidden = '';
-	if ( !is_admin() && function_exists( 'a3_lazy_load_enable' ) ) {
+	if ( ! is_admin() && function_exists( 'a3_lazy_load_enable' ) ) {
 		$lazy_load = '-lazyload';
 		$lazy_hidden = '<div class="a3-cycle-lazy-hidden lazy-hidden"></div>';
 	}
@@ -243,6 +243,8 @@ class A3_Responsive_Slider_Display
 
     <?php
 		$slider_output = ob_get_clean();
+
+		$slider_output = str_replace( array("\r\n", "\r", "\n"), '', $slider_output );
 
 		$script_settings = array(
 			'fx'       => $fx,
