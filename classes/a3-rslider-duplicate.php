@@ -175,7 +175,7 @@ class A3_Responsive_Slider_Duplicate
 		if ( is_array( $all_images ) && count( $all_images ) > 0 ) {
 			foreach ( $all_images as $a_image ) {
 				if ( $a_image->is_video == 0 ) 
-					A3_Responsive_Slider_Data::insert_row_image( $new_id, $a_image->img_url, $a_image->img_link, $a_image->img_title, $a_image->img_description, $a_image->img_order );
+					A3_Responsive_Slider_Data::insert_row_image( $new_id, $a_image->img_url, $a_image->img_link, $a_image->img_title, $a_image->img_description, $a_image->img_order, $a_image->show_readmore );
 			}
 		}
 	}
