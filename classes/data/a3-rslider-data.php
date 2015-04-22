@@ -9,8 +9,7 @@ class A3_Responsive_Slider_Data
 			if( ! empty($wpdb->charset ) ) $collate .= "DEFAULT CHARACTER SET $wpdb->charset";
 			if( ! empty($wpdb->collate ) ) $collate .= " COLLATE $wpdb->collate";
 		}
-		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-			
+
 		$a3_rslider_images = $wpdb->prefix . "a3_rslider_images";
 		if($wpdb->get_var("SHOW TABLES LIKE '$a3_rslider_images'") != $a3_rslider_images){
 			$sql = "CREATE TABLE " . $a3_rslider_images . " (
@@ -26,7 +25,8 @@ class A3_Responsive_Slider_Data
 						  `img_order` int(11) NOT NULL default 0,
 						  PRIMARY KEY  (`id`)
 						) $collate ;";
-			dbDelta($sql);		
+
+			$wpdb->query($sql);
 		}
 	}
 		

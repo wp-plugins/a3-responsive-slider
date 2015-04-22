@@ -2,8 +2,8 @@
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
-Tested up to: 4.1
-Stable tag: 1.1.5
+Tested up to: 4.2.0
+Stable tag: 1.1.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -164,6 +164,11 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.1.6 - 2015/04/21 =
+* Tweak - Tested and Tweaked for full compatibility with WordPress Version 4.2.0
+* Tweak - Changed <code>dbDelta()</code> function to <code>$wpdb->query()</code> for creating plugin table database.
+* Tweak - Update style of plugin framework. Removed the [data-icon] selector to prevent conflict with other plugins that have font awesome icons
+
 = 1.1.5 - 2015/01/24 =
 * Tweak - Added str_replace( array("\r\n", "\r", "\n"), '', $slider_output) to prevent Themes and plugins that process shortcodes from adding line break br and paragraph p tags to Slider shortcodes and breaking them.
 * Tweak - Changed add_action( 'wp_enqueue_scripts' ) to add_action( 'wp_head' ) for fixed the video don't work if have some plugin filter video tag for comaptibility with Pro Version upgrade.
@@ -231,6 +236,9 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.1.6 =
+Maintenance upgrade! Code tweaks for full compatibility with WordPress 4.2.0
 
 = 1.1.5 =
 Upgrade now for 3 code tweaks which could be important depending on your site configuration.
