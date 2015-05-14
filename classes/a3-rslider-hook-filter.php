@@ -15,19 +15,19 @@ class A3_Responsive_Slider_Hook_Filter
 			wp_register_style( 'a3_rslider_template1', $_upload_dir['baseurl'] . '/sass/a3_responsive_slider'.$suffix.'.css' );
 
 		wp_enqueue_script('jquery');
-		wp_register_script( 'a3-cycle2-script', A3_RESPONSIVE_SLIDER_JS_URL . '/jquery.cycle2'. $suffix .'.js', array('jquery'), '2.1.2' );
-		wp_register_script( 'a3-cycle2-center-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.center'. $suffix .'.js', array('jquery'), '2.1.2' );
-		wp_register_script( 'a3-cycle2-caption2-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.caption2'. $suffix .'.js', array('jquery'), '2.1.2' );
-		wp_register_script( 'a3-cycle2-swipe-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.swipe'. $suffix .'.js', array('jquery'), '2.1.2' );
+		wp_register_script( 'a3-cycle2-script', A3_RESPONSIVE_SLIDER_JS_URL . '/jquery.cycle2'. $suffix .'.js', array('jquery'), '2.1.6' );
+		wp_register_script( 'a3-cycle2-center-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.center'. $suffix .'.js', array('jquery'), '2.1.6' );
+		wp_register_script( 'a3-cycle2-caption2-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.caption2'. $suffix .'.js', array('jquery'), '2.1.6' );
+		wp_register_script( 'a3-cycle2-swipe-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.swipe'. $suffix .'.js', array('jquery'), '2.1.6' );
 
 		require_once A3_RESPONSIVE_SLIDER_DIR . '/includes/mobile_detect.php';
 		$device_detect = new A3_RSlider_Mobile_Detect();
 		if ( ! $device_detect->isMobile() ) {
-			wp_register_script( 'a3-cycle2-flip-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.flip'. $suffix .'.js', array('jquery'), '2.1.2' );
-			wp_register_script( 'a3-cycle2-scrollVert-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.scrollVert'. $suffix .'.js', array('jquery'), '2.1.2' );
-			wp_register_script( 'a3-cycle2-shuffle-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.shuffle'. $suffix .'.js', array('jquery'), '2.1.2' );
-			wp_register_script( 'a3-cycle2-tile-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.tile'. $suffix .'.js', array('jquery'), '2.1.2' );
-			wp_register_script( 'a3-cycle2-ie-fade-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.ie-fade'. $suffix .'.js', array('jquery'), '2.1.2' );
+			wp_register_script( 'a3-cycle2-flip-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.flip'. $suffix .'.js', array('jquery'), '2.1.6' );
+			wp_register_script( 'a3-cycle2-scrollVert-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.scrollVert'. $suffix .'.js', array('jquery'), '2.1.6' );
+			wp_register_script( 'a3-cycle2-shuffle-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.shuffle'. $suffix .'.js', array('jquery'), '2.1.6' );
+			wp_register_script( 'a3-cycle2-tile-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.tile'. $suffix .'.js', array('jquery'), '2.1.6' );
+			wp_register_script( 'a3-cycle2-ie-fade-script', A3_RESPONSIVE_SLIDER_EXTENSION_JS_URL . '/jquery.cycle2.ie-fade'. $suffix .'.js', array('jquery'), '2.1.6' );
 			$wp_scripts->add_data( 'a3-cycle2-ie-fade-script', 'conditional', 'IE' );
 
 			wp_register_script( 'a3-rslider-frontend', A3_RESPONSIVE_SLIDER_JS_URL . '/a3-rslider-frontend.js', array('jquery') );
