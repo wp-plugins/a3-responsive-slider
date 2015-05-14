@@ -178,20 +178,10 @@ class A3_Responsive_Slider_Template_1_ReadMore_Settings extends A3_Responsive_Sl
      	$this->form_fields = apply_filters( $this->option_name . '_settings_fields', array(
 		
 			array(
-				'name'		=> __( 'Read More Settings', 'a3_responsive_slider' ),
+				'name'		=> __( 'Read More Style', 'a3_responsive_slider' ),
                 'type' 		=> 'heading',
+                'desc'		=> __( 'The Read More button / Text only shows on a slider image when you have entered an image link url, caption text and checked the show Read More button / text box. The read more button text shows at the end of the caption text.', 'a3_responsive_slider' )
            	),
-			array(  
-				'name' 		=> __( 'Read More', 'a3_responsive_slider' ),
-				'id' 		=> 'enable_redmore_link',
-				'class'		=> 'enable_redmore_link',
-				'type' 		=> 'onoff_checkbox',
-				'default'	=> 1,
-				'checked_value'		=> 1,
-				'unchecked_value' 	=> 0,
-				'checked_label'		=> __( 'ON', 'a3_responsive_slider' ),
-				'unchecked_label' 	=> __( 'OFF', 'a3_responsive_slider' ),
-			),
 			
 			array(
             	'name' 		=> __( 'Button/Hyperlink', 'a3_responsive_slider' ),
@@ -352,17 +342,6 @@ $(document).ready(function() {
 		$(".show_readmore_hyperlink_styling").css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
 	}
 	
-	if ( $("input.enable_redmore_link:checked").val() == '1') {
-		$(".readmore_settings_container").css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
-		if ( $("input.readmore_bt_type:checked").val() == 'button') {
-			$(".show_readmore_hyperlink_styling").css( {'visibility': 'hidden', 'height' : '0px', 'overflow' : 'hidden'} );
-		} else {
-			$(".show_readmore_button_styling").css( {'visibility': 'hidden', 'height' : '0px', 'overflow' : 'hidden'} );
-		}
-	} else {
-		$(".readmore_settings_container").css( {'visibility': 'hidden', 'height' : '0px', 'overflow' : 'hidden'} );
-	}
-	
 	$(document).on( "a3rev-ui-onoff_checkbox-switch", '.readmore_bt_type', function( event, value, status ) {
 		$(".show_readmore_button_styling").hide().css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
 		$(".show_readmore_hyperlink_styling").hide().css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
@@ -375,19 +354,6 @@ $(document).ready(function() {
 		}
 	});
 	
-	$(document).on( "a3rev-ui-onoff_checkbox-switch", '.enable_redmore_link', function( event, value, status ) {
-		$(".readmore_settings_container").hide().css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
-		if ( status == 'true' ) {
-			$(".readmore_settings_container").slideDown();
-			if ( $("input.readmore_bt_type:checked").val() == 'button') {
-				$(".show_readmore_hyperlink_styling").hide();
-			} else {
-				$(".show_readmore_button_styling").hide();
-			}
-		} else {
-			$(".readmore_settings_container").slideUp();
-		}
-	});
 });
 })(jQuery);
 </script>

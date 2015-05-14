@@ -5,7 +5,7 @@
  *
  * Motto: "Every business should have a mobile detection script to detect mobile readers"
  *
- * Mobile_Detect is a lightweight PHP class for detecting mobile devices (including tablets).
+ * A3_RSlider_Mobile_Detect is a lightweight PHP class for detecting mobile devices (including tablets).
  * It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.
  *
  * @author      Current authors: Serban Ghita <serbanghita@gmail.com>, Nick Ilyin <nick.ilyin@gmail.com>
@@ -23,7 +23,7 @@
  * @version     2.7.9
  */
 
-class Mobile_Detect
+class A3_RSlider_Mobile_Detect
 {
     /**
      * Mobile detection type.
