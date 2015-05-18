@@ -3,7 +3,7 @@ Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
 Tested up to: 4.2.2
-Stable tag: 1.1.7
+Stable tag: 1.1.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -164,6 +164,11 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.1.8 - 2015/05/18 =
+* Tweak - Change Slider Skins Control and Pager setting default to OFF
+* Tweak - Control and pager CSS only loads from the footer when those settings are switched ON
+* Credit - Thanks to Kent for raising the issue attention https://a3rev.com/forums/topic/prev-next-pause-appears-when-page-refreshes/
+
 = 1.1.7 - 2015/05/14 =
 * Tweak - Tested and Tweaked for full compatibility with WordPress Version 4.2.2
 * Tweak - Update cycle2 script to latest version 2.1.6
@@ -241,6 +246,9 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.1.8 =
+Maintenance Upgrade. 2 Code Tweaks for improved loading and display of Slider Skin Controls and Pager. 
 
 = 1.1.7 =
 Maintenance Upgrade. 1 shortcode alignment bug fix, update of core script and full compatibility with WordPress version 4.2.2

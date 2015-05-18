@@ -167,7 +167,7 @@ class A3_Responsive_Slider_Display
 				<?php } ?>
 			<?php } ?>
 
-        	<div class="a3-cycle-controls">
+        	<div class="a3-cycle-controls" style="display: none;">
             	<span><a href="#" class="cycle-prev"><?php _e( 'Prev', 'a3_responsive_slider' ); ?></a></span>
                 <span><a href="#" class="cycle-next"><?php _e( 'Next', 'a3_responsive_slider' ); ?></a></span>
                 <span><a href="#" data-cycle-cmd="pause" data-cycle-context="#a3-cycle-slideshow-<?php echo $unique_id; ?>" onclick="return false;" class="cycle-pause" style=" <?php if ( $is_auto_start == 0 ) { echo 'display:none'; } ?>"><?php _e( 'Pause', 'a3_responsive_slider' ); ?></a></span>
@@ -179,7 +179,7 @@ class A3_Responsive_Slider_Display
 			self::get_caption_title();
 			?>
 
-        	<div class="cycle-pager-container">
+        	<div class="cycle-pager-container" style="display: none;">
             	<div class="cycle-pager-inside">
             		<div class="cycle-pager-overlay"></div>
                 	<div class="cycle-pager"></div>
