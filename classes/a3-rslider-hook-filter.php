@@ -12,7 +12,7 @@ class A3_Responsive_Slider_Hook_Filter
 		wp_register_style( 'a3_responsive_slider_styles', A3_RESPONSIVE_SLIDER_CSS_URL . '/cycle.css' );
 
 		if ( file_exists( $_upload_dir['basedir'] . '/sass/a3_responsive_slider'.$suffix.'.css' ) )
-			wp_register_style( 'a3_rslider_template1', $_upload_dir['baseurl'] . '/sass/a3_responsive_slider'.$suffix.'.css' );
+			wp_register_style( 'a3_rslider_template1', str_replace(array('http:','https:'), '', $_upload_dir['baseurl'] ) . '/sass/a3_responsive_slider'.$suffix.'.css' );
 
 		wp_enqueue_script('jquery');
 		wp_register_script( 'a3-cycle2-script', A3_RESPONSIVE_SLIDER_JS_URL . '/jquery.cycle2'. $suffix .'.js', array('jquery'), '2.1.6' );
