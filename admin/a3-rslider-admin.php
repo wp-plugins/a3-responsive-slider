@@ -2,7 +2,7 @@
 update_option('a3rev_rslider_plugin', 'a3_responsive_slider');
 
 function a3_rslider_activated(){
-	update_option('a3rev_rslider_version', '1.1.9');
+	update_option('a3rev_rslider_version', '1.1.10');
 
 	// Set Settings Default from Admin Init
 	global $a3_responsive_slider_admin_init;
@@ -130,10 +130,11 @@ add_action( 'admin_enqueue_scripts', array( 'A3_Responsive_Slider_Hook_Filter', 
 add_action( 'init', 'a3_rslider_upgrade_plugin' );
 function a3_rslider_upgrade_plugin () {
 	if( version_compare(get_option('a3rev_rslider_version'), '1.1.3') === -1 ){
+		update_option('a3rev_rslider_version', '1.1.3');
+
 		// Build sass
 		global $a3_responsive_slider_less;
 		$a3_responsive_slider_less->plugin_build_sass();
-		update_option('a3rev_rslider_version', '1.1.3');
 	}
 
 	// Upgrade to 1.1.4
@@ -143,13 +144,14 @@ function a3_rslider_upgrade_plugin () {
 	}
 
 	if( version_compare(get_option('a3rev_rslider_version'), '1.1.8') === -1 ){
+		update_option('a3rev_rslider_version', '1.1.8');
+
 		// Build sass
 		global $a3_responsive_slider_less;
 		$a3_responsive_slider_less->plugin_build_sass();
-		update_option('a3rev_rslider_version', '1.1.8');
 	}
 
-	update_option('a3rev_rslider_version', '1.1.9');
+	update_option('a3rev_rslider_version', '1.1.10');
 }
 
 	// Template Tag for Developer use to put into php code
