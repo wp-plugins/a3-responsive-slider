@@ -164,6 +164,9 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.1.10 - 2015/06/10 =
+* Fix - Check 'request_filesystem_credentials' function, if it does not exists then require the core php lib file from WP where it is defined
+
 = 1.1.9 - 2015/06/03 =
 * Tweak - Security Hardening. Removed all php file_put_contents functions in the plugin framework and replace with the WP_Filesystem API
 * Tweak - Security Hardening. Removed all php file_get_contents functions in the plugin framework and replace with the WP_Filesystem API
@@ -251,6 +254,9 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.1.10 =
+Maintenance Upgrade. Fix for PHP Fatal Error when upgrading from older versions of the plugin to version 1.1.9 on some servers
 
 = 1.1.9 =
 Important Maintenance Upgrade. 2 x major a3rev Plugin Framework Security Hardening Tweaks plus 1 https bug fix
