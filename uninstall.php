@@ -7,7 +7,7 @@
  */
 if( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) 
 	exit();
-
+	
 if ( defined( 'A3_RESPONSIVE_SLIDER_NAME') )
 	return ;
 
@@ -17,7 +17,6 @@ $templates_list = array(
 	'template_1'		=> 'template1',
 	'template_2'		=> 'template2',
 	'template_card'		=> 'template_card',
-	'template_4'		=> 'template4',
 	'template_widget'	=> 'template-widget',
 	'template_mobile'	=> 'template-mobile',
 );
