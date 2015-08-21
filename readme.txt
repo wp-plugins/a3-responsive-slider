@@ -2,8 +2,8 @@
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
-Tested up to: 4.2.2
-Stable tag: 1.1.10
+Tested up to: 4.3
+Stable tag: 1.2.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -164,6 +164,15 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.2.0 - 2015/08/21 =
+* Feature - Added Plugin Framework Customization settings. Control how the admin panel settings show when editing.
+* Tweak - Tested for full compatibility with WordPress major version 4.3.0
+* Tweak - include new CSSMin lib from https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port into plugin framework instead of old CSSMin lib from http://code.google.com/p/cssmin/ , to avoid conflict with plugins or themes that have CSSMin lib
+* Tweak - Make __construct() function for 'Compile_Less_Sass' class instead of using a method with the same name as the class for compatibility on WP 4.3 and is deprecated on PHP4
+* Tweak - Change class name from 'lessc' to 'a3_lessc' so that it does not conflict with plugins or themes that have another Lessc lib
+* Tweak - Tested for full compatibility with WordPress Version 4.3.0
+* Fix - Make __construct() function for 'A3_Responsive_Slider_Shortcode' class instead of using a method with the same name as the class for compatibility on WP 4.3 and is deprecated on PHP4
+
 = 1.1.10 - 2015/06/10 =
 * Fix - Check 'request_filesystem_credentials' function, if it does not exists then require the core php lib file from WP where it is defined
 
@@ -254,6 +263,9 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.2.0 =
+Major Maintenance Upgrade. 1 new Feature and 5 Code Tweaks plus 1 bug fixes for full compatibility with WordPress v 4.3.0
 
 = 1.1.10 =
 Maintenance Upgrade. Fix for PHP Fatal Error when upgrading from older versions of the plugin to version 1.1.9 on some servers

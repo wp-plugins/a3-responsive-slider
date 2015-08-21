@@ -8,8 +8,7 @@
 if( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) 
 	exit();
 	
-if ( defined( 'A3_RESPONSIVE_SLIDER_NAME') )
-	return ;
+if ( get_option('a3_rslider_lite_clean_on_deletion') != 1 ) return;
 
 global $wpdb;
 

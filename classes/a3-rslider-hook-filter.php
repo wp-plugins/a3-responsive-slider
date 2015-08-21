@@ -237,5 +237,11 @@ class A3_Responsive_Slider_Hook_Filter
 		return $links;
 	}
 
+	public static function settings_plugin_links($actions) {
+		$actions = array_merge( array( 'settings' => '<a href="edit.php?post_type=a3_slider">' . __( 'Sliders', 'a3_responsive_slider' ) . '</a>' ), $actions );
+
+		return $actions;
+	}
+
 }
 ?>

@@ -14,7 +14,7 @@
 class A3_Responsive_Slider_Shortcode
 {
 	
-	public function A3_Responsive_Slider_Shortcode () {
+	public function __construct () {
 		$this->init();
 	}
 	

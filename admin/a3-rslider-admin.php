@@ -2,7 +2,7 @@
 update_option('a3rev_rslider_plugin', 'a3_responsive_slider');
 
 function a3_rslider_activated(){
-	update_option('a3rev_rslider_version', '1.1.10');
+	update_option('a3rev_rslider_version', '1.2.0');
 
 	// Set Settings Default from Admin Init
 	global $a3_responsive_slider_admin_init;
@@ -13,6 +13,8 @@ function a3_rslider_activated(){
 	$a3_responsive_slider_less->plugin_build_sass();
 
 	A3_Responsive_Slider_Data::install_database();
+
+	update_option( 'a3_rslider_lite_clean_on_deletion', 1 );
 
 	update_option('a3rev_rslider_just_installed', true);
 }
@@ -38,6 +40,9 @@ add_action( 'admin_enqueue_scripts', array( 'A3_Responsive_Slider_Hook_Filter', 
 
 // Add text on right of Visit the plugin on Plugin manager page
 add_filter( 'plugin_row_meta', array( 'A3_Responsive_Slider_Hook_Filter', 'plugin_extra_links'), 10, 2 );
+
+// Add extra link on left of Deactivate link on Plugin manager page
+add_action( 'plugin_action_links_'.A3_RESPONSIVE_SLIDER_NAME, array( 'A3_Responsive_Slider_Hook_Filter', 'settings_plugin_links' ) );
 
 // Add admin sidebar menu css
 add_action( 'admin_enqueue_scripts', array( 'A3_Responsive_Slider_Hook_Filter', 'admin_sidebar_menu_css' ) );
@@ -151,7 +156,7 @@ function a3_rslider_upgrade_plugin () {
 		$a3_responsive_slider_less->plugin_build_sass();
 	}
 
-	update_option('a3rev_rslider_version', '1.1.10');
+	update_option('a3rev_rslider_version', '1.2.0');
 }
 
 	// Template Tag for Developer use to put into php code
