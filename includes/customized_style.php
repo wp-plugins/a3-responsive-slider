@@ -39,6 +39,7 @@ foreach ( $list_templates as $template_key => $template_name ) {
 ?>
 .a3-rslider-<?php echo $template_key; ?>.a3-rslider-container {
 	width: <?php echo $slider_container_wide; ?>;
+	max-width: 100%;
 }
 .a3-rslider-<?php echo $template_key; ?> .a3-cycle-slideshow {
 	height: <?php echo $slider_container_tall; ?>;
@@ -58,8 +59,8 @@ foreach ( $list_templates as $template_key => $template_name ) {
 /* Slider Controls */
 <?php extract( ${'a3_rslider_'.$templateid.'_control_settings'} ); ?>
 .a3-rslider-<?php echo $template_key; ?> .a3-cycle-controls {
-<?php if ( $enable_slider_control == 0 ) { ?>
-	display: none !important;
+<?php if ( $enable_slider_control != 0 ) { ?>
+	display: inline !important;
 <?php } ?>
 <?php if ( $slider_control_transition == 'alway' ) { ?>
 	opacity:1;
@@ -94,8 +95,8 @@ foreach ( $list_templates as $template_key => $template_name ) {
 /* Slider Pager */
 <?php extract( ${'a3_rslider_'.$templateid.'_pager_settings'} ); ?>
 .a3-rslider-<?php echo $template_key; ?> .cycle-pager-container {
-<?php if ( $enable_slider_pager == 0 ) { ?>
-	display: none !important;
+<?php if ( $enable_slider_pager != 0 ) { ?>
+	display: inline !important;
 <?php } ?>
 <?php if ( $slider_pager_transition == 'alway' ) { ?>
 	opacity:1;
@@ -350,9 +351,6 @@ foreach ( $list_templates as $template_key => $template_name ) {
 /* Read More */
 <?php extract( ${'a3_rslider_'.$templateid.'_readmore_settings'} ); ?>
 .a3-rslider-<?php echo $template_key; ?> .a3-rslider-read-more {
-<?php if ( $enable_redmore_link == 0 ) { ?>
-	display: none !important;
-<?php } ?>
 	display:inline-block !important;
 	margin-bottom: <?php echo $readmore_bt_margin_bottom; ?>px !important;
 	margin-top: <?php echo $readmore_bt_margin_top; ?>px !important;
