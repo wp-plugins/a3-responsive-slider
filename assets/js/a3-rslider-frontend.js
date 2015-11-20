@@ -44,7 +44,7 @@ $(function(){
 		//a3_RSlider_Frontend.setHeightProportional();
 	});
 
-	if($.fn.lazyLoadXT !== undefined) {
+	if($.fn.lazyLoadXT !== undefined && a3_rslider_frontend_params.enable_lazyload == 1 ) {
 		function removeLazyHidden(){
 			var myVar = setInterval( function(){
 				$(".cycle-pre-initialized").find('.a3-cycle-lazy-hidden').remove();
@@ -58,6 +58,14 @@ $(function(){
 			});
 			$(this).parents('.a3-cycle-slideshow').cycle();
 		}).lazyLoadXT();
+	} else if($.fn.lazyLoadXT !== undefined ) {
+		$(".a3-cycle-slideshow img.a3-rslider-image").on('lazyload', function(){
+			var current_cycle_slidershow = $(this).parents('.a3-cycle-slideshow');
+			if ( ! current_cycle_slidershow.hasClass('a3-cycle-reinited') ) {
+				current_cycle_slidershow.cycle('reinit');
+				current_cycle_slidershow.addClass('a3-cycle-reinited');
+			}
+		});
 	}
 });
 })(jQuery);

@@ -113,7 +113,7 @@ class A3_Responsive_Slider_Display
 	<?php
 	$lazy_load = '';
 	$lazy_hidden = '';
-	if ( ! is_admin() && function_exists( 'a3_lazy_load_enable' ) ) {
+	if ( ! is_admin() && function_exists( 'a3_lazy_load_enable' ) && ! class_exists( 'A3_Portfolio' ) ) {
 		$lazy_load = '-lazyload';
 		$lazy_hidden = '<div class="a3-cycle-lazy-hidden lazy-hidden"></div>';
 	}
@@ -186,18 +186,25 @@ class A3_Responsive_Slider_Display
                 </div>
             </div>
 
+		<?php $total_item = 0; ?>
 		<?php foreach ( $slide_items as $item ) { ?>
 		<?php
 				if ( $item->is_video == 1 ) continue;
 				if ( trim( $item->img_url ) == '' ) continue;
 
+				$total_item++;
+
 				$img_title = '';
+				$open_type = '';
+				if ( 1 == $item->open_newtab ) {
+					$open_type = '_blank';
+				}
 				if ( trim( $item->img_title ) != '' ) {
 					$have_image_title = true;
 					if ( trim( $item->img_link ) != '' ) {
 						if ( stristr( $item->img_link, 'http' ) === FALSE && stristr( $item->img_link, 'https' ) === FALSE )
 							$item->img_link = 'http://' . $item->img_link;
-						$img_title = '<div class="cycle-caption-text"><a href="'. trim( $item->img_link ) .'">'. trim( stripslashes( $item->img_title ) ) .'</a></div>';
+						$img_title = '<div class="cycle-caption-text"><a target="'.$open_type.'" href="'. trim( $item->img_link ) .'">'. trim( stripslashes( $item->img_title ) ) .'</a></div>';
 					} else {
 						$img_title = '<div class="cycle-caption-text">'.trim( stripslashes( $item->img_title ) ).'</div>';
 					}
@@ -212,7 +219,7 @@ class A3_Responsive_Slider_Display
 						$read_more_text = $readmore_bt_text;
 					}
 					$read_more_class = 'a3-rslider-read-more '. $read_more_class ;
-					$read_more = esc_attr( '<a class="'.$read_more_class.'" href="'. trim( $item->img_link ). '">' . $read_more_text . '</a>' );
+					$read_more = esc_attr( '<a target="'.$open_type.'" class="'.$read_more_class.'" href="'. trim( $item->img_link ). '">' . $read_more_text . '</a>' );
 				}
 
 				$img_description = '';
@@ -222,15 +229,19 @@ class A3_Responsive_Slider_Display
 				}
 		?>
 
-        	<img class="a3-rslider-image" src="<?php echo esc_attr( $item->img_url ); ?>" name="<?php echo esc_attr( $img_title ); ?>" title="" data-cycle-desc="<?php echo esc_attr( $img_description ); ?>"
-            style="position:absolute; visibility:hidden; top:0; left:0; <?php if ( trim( $item->img_link ) != '' ) { echo 'cursor:pointer;'; } ?>"
+        	<img class="a3-rslider-image <?php if ( trim( $item->img_link ) != '' ) { echo 'a3-rslider-image-url'; } ?>" src="<?php echo esc_attr( $item->img_url ); ?>" name="<?php echo esc_attr( $img_title ); ?>" title="" data-cycle-desc="<?php echo esc_attr( $img_description ); ?>"
+            style="position:absolute; visibility:hidden; top:0; left:0;"
             <?php
 				if ( $fx == 'random' ) {
 					echo A3_Responsive_Slider_Functions::get_transition_random( $slider_settings );
 				}
 
 				if ( trim( $item->img_link ) != '' ) {
-					echo ' onclick="window.location=\''.esc_attr( trim( $item->img_link ) ).'\';" ';
+					if ( 1 == $item->open_newtab ) {
+						echo ' onclick="window.open(\''.esc_attr( trim( $item->img_link ) ).'\', \'_blank\');" ';
+					} else {
+						echo ' onclick="window.location=\''.esc_attr( trim( $item->img_link ) ).'\';" ';
+					}
 				}
 			?>
             />
@@ -241,6 +252,16 @@ class A3_Responsive_Slider_Display
 
     </div>
 
+	<?php
+    	if ( $total_item < 2 ) {
+    ?>
+	<style type="text/css">
+	#a3-rslider-container-<?php echo $unique_id; ?> .a3-cycle-controls,
+	#a3-rslider-container-<?php echo $unique_id; ?> .cycle-pager-container {
+		display: none !important;
+	}
+	</style>
+	<?php } ?>
     <?php
 		$slider_output = ob_get_clean();
 

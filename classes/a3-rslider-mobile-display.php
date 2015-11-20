@@ -33,7 +33,7 @@ class A3_Responsive_Slider_Mobile_Display
 		}
 
 		ob_start();
-		if ( !is_admin() && function_exists( 'a3_lazy_load_enable' ) ) {
+		if ( ! is_admin() && function_exists( 'a3_lazy_load_enable' ) && ! class_exists( 'A3_Portfolio' ) ) {
 			$lazy_load = '-lazyload';
 			$lazy_hidden = '<div class="a3-cycle-lazy-hidden lazy-hidden"></div>';
 		}
@@ -82,11 +82,15 @@ class A3_Responsive_Slider_Mobile_Display
 				if ( trim( $item->img_url ) == '' ) continue;
 
 				$img_title = '';
+				$open_type = '';
+				if ( 1 == $item->open_newtab ) {
+					$open_type = '_blank';
+				}
 				if ( trim( $item->img_title ) != '' ) {
 					if ( trim( $item->img_link ) != '' ) {
 						if ( stristr( $item->img_link, 'http' ) === FALSE && stristr( $item->img_link, 'https' ) === FALSE )
 							$item->img_link = 'http://' . $item->img_link;
-						$img_title = '<div class="cycle-title"><a href="'. trim( $item->img_link ) .'">'. trim( stripslashes( $item->img_title ) ) .'</a></div>';
+						$img_title = '<div class="cycle-title"><a target="'.$open_type.'" href="'. trim( $item->img_link ) .'">'. trim( stripslashes( $item->img_title ) ) .'</a></div>';
 					} else {
 						$img_title = '<div class="cycle-title">'.trim( stripslashes( $item->img_title ) ).'</div>';
 					}
@@ -100,10 +104,14 @@ class A3_Responsive_Slider_Mobile_Display
 
 				$image_click = '';
             	if ( trim( $item->img_link ) != '' ) {
-					$image_click = ' onclick="window.location=\''.esc_attr( trim( $item->img_link ) ).'\';" ';
+            		if ( 1 == $item->open_newtab ) {
+						$image_click = ' onclick="window.open(\''.esc_attr( trim( $item->img_link ) ).'\', \'_blank\');" ';
+					} else {
+						$image_click = ' onclick="window.location=\''.esc_attr( trim( $item->img_link ) ).'\';" ';
+					}
 				}
 		?>
-                <img class="a3-rslider-image" <?php echo $image_click; ?> src="<?php echo esc_attr( $item->img_url ); ?>" title="" alt="" style="position:absolute; visibility:hidden; top:0; left:0;" />
+                <img class="a3-rslider-image <?php if ( trim( $item->img_link ) != '' ) { echo 'a3-rslider-image-url'; } ?>" <?php echo $image_click; ?> src="<?php echo esc_attr( $item->img_url ); ?>" title="" alt="" style="position:absolute; visibility:hidden; top:0; left:0;" />
 
         <?php } ?>
         </div>

@@ -243,6 +243,9 @@ table#galleries-table td {
 }
 table#galleries-table input[type="text"]{
 	width:50%;
+  float: left;
+  margin-left: 1px;
+  margin-right: 10px;
 }
 #wpbody-content *{outline:none !important;outline-color: transparent !important;}
 .galleries_options .wp-picker-container input.wp-color-picker[type="text"]{font-size:15px;padding-top:3px;padding-bottom: 3px;float:left;}
@@ -392,6 +395,7 @@ label.galleries-add-new-yt-container {
 	}
   table#galleries-table .galleries-readmore {
     width: 100%;
+    margin-bottom: 10px;
   }
 	.image-wrapper a img {
 		max-width:256px;

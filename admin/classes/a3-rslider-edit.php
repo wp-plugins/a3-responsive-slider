@@ -61,10 +61,12 @@ class A3_Responsive_Slider_Edit
 					$order = 0;
 					foreach ( $photo_galleries['image'] as $key => $images ) {
 						$show_readmore = 0;
+						$open_newtab   = 0;
 						if ( isset( $photo_galleries['show_readmore'][$key] ) ) $show_readmore = 1;
+						if ( isset( $photo_galleries['open_newtab'][$key] ) ) $open_newtab = 1;
 						if ( ! isset( $photo_galleries['video_url'][$key] ) && trim( $images ) != '' ) {
 							$order++;
-							A3_Responsive_Slider_Data::insert_row_image( $slider_id, trim( $images ), $photo_galleries['link'][$key], $photo_galleries['title'][$key], $photo_galleries['text'][$key], $order, $show_readmore );
+							A3_Responsive_Slider_Data::insert_row_image( $slider_id, trim( $images ), $photo_galleries['link'][$key], $photo_galleries['title'][$key], $photo_galleries['text'][$key], $order, $show_readmore, $open_newtab );
 						}
 					}
 				}
@@ -1005,6 +1007,15 @@ the <a href="%s" target="_blank">Pro Version Free Trail</a> to activate 2nd Slid
                 <div class="link-wrapper">
                   <label for="galleries-link-<?php echo $i;?>"><?php _e( 'Link URL', 'a3_responsive_slider' ); ?></label>
                   <input type="text" class="galleries-link" id="galleries-link-<?php echo $i;?>" value="<?php if ( ! is_array( $item ) ) echo $item->img_link;?>" name="photo_galleries[link][<?php echo $i;?>]">
+                  <?php
+                  	$open_newtab = 0;
+                  	if ( isset( $item->open_newtab ) ) {
+                  		$open_newtab = $item->open_newtab;
+                  	}
+                  ?>
+                  <div class="galleries-readmore">
+                  	<label><input type="checkbox" <?php checked( 1, $open_newtab, true ); ?> name="photo_galleries[open_newtab][<?php echo $i;?>]" id="galleries-open-newtab-<?php echo $i;?>" value="1" /><?php _e( 'Open in new tab', 'a3_responsive_slider' ); ?></label>
+                  </div>
                 </div>
                 <div style="clear:both"></div>
                 <div class="text-wrapper">

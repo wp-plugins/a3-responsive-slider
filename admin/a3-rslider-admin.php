@@ -2,7 +2,7 @@
 update_option('a3rev_rslider_plugin', 'a3_responsive_slider');
 
 function a3_rslider_activated(){
-	update_option('a3rev_rslider_version', '1.2.0');
+	update_option('a3rev_rslider_version', '1.3.0');
 
 	// Set Settings Default from Admin Init
 	global $a3_responsive_slider_admin_init;
@@ -144,8 +144,8 @@ function a3_rslider_upgrade_plugin () {
 
 	// Upgrade to 1.1.4
 	if( version_compare(get_option('a3rev_rslider_version'), '1.1.4') === -1 ){
-		include( A3_RESPONSIVE_SLIDER_DIR. '/includes/updates/a3_rslider-update-1.1.4.php' );
 		update_option('a3rev_rslider_version', '1.1.4');
+		include( A3_RESPONSIVE_SLIDER_DIR. '/includes/updates/a3_rslider-update-1.1.4.php' );
 	}
 
 	if( version_compare(get_option('a3rev_rslider_version'), '1.1.8') === -1 ){
@@ -156,7 +156,13 @@ function a3_rslider_upgrade_plugin () {
 		$a3_responsive_slider_less->plugin_build_sass();
 	}
 
-	update_option('a3rev_rslider_version', '1.2.0');
+	// Upgrade to 1.3.0
+	if( version_compare(get_option('a3rev_rslider_version'), '1.3.0') === -1 ){
+		update_option('a3rev_rslider_version', '1.3.0');
+		include( A3_RESPONSIVE_SLIDER_DIR. '/includes/updates/a3_rslider-update-1.3.0.php' );
+	}
+
+	update_option('a3rev_rslider_version', '1.3.0');
 }
 
 	// Template Tag for Developer use to put into php code

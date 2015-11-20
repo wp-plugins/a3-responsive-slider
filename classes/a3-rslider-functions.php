@@ -107,7 +107,7 @@ class A3_Responsive_Slider_Functions
 	public static function get_youtube_url( $youtube_code = '' ) {
 		if ( trim( $youtube_code ) == '' ) return '';
 		
-		$youtube_url = 'http://www.youtube.com/v/' . trim( $youtube_code ) . '?version=3&hl=en_US&rel=0';
+		$youtube_url = 'http://www.youtube.com/v/' . trim( $youtube_code ) . '?version=3&hl=en_US&rel=0&wmode=opaque';
 		
 		return $youtube_url;
 	}

@@ -3,7 +3,7 @@ Contributors: a3rev, A3 Revolution Software Development team
 Tags: responsive slider, wordpress image slider, responsive image slider, image gallery
 Requires at least: 3.8
 Tested up to: 4.3
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -164,6 +164,13 @@ The manual installation method involves down loading our plugin and uploading it
 
 == Changelog ==
 
+= 1.3.0 - 2015/11/20 =
+* Feature - Add new option [ ] Open in new tab for slider images with links
+* Feature - When a skin Controls and Pager options are switched ON don't show Controls and Pagers if the slider just has one slide
+* Tweak - Update table database for new Open in new tab option
+* Tweak - Tested for full compatibility with WordPress major version 4.3.1
+* Fix - Make slider show for compatibility with a3 Portfolio and a3 Lazy Load
+
 = 1.2.0 - 2015/08/21 =
 * Feature - Added Plugin Framework Customization settings. Control how the admin panel settings show when editing.
 * Tweak - Tested for full compatibility with WordPress major version 4.3.0
@@ -263,6 +270,9 @@ The manual installation method involves down loading our plugin and uploading it
 * First Release of Lite Version.
 
 == Upgrade Notification ==
+
+= 1.3.0 =
+Feature Upgrade. 2 new features, 1 bug fixes and tweaks for full compatibility with WordPress Version 4.3.1
 
 = 1.2.0 =
 Major Maintenance Upgrade. 1 new Feature and 5 Code Tweaks plus 1 bug fixes for full compatibility with WordPress v 4.3.0

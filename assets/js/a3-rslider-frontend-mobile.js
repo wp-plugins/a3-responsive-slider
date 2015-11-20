@@ -1,6 +1,6 @@
 (function($) {
 $(function(){
-	if($.fn.lazyLoadXT !== undefined) {
+	if($.fn.lazyLoadXT !== undefined && a3_rslider_frontend_params.enable_lazyload == 1 ) {
 		function removeLazyHidden(){
 			var myVar = setInterval( function(){
 				$(".cycle-pre-initialized").find('div.a3-cycle-lazy-hidden').remove();

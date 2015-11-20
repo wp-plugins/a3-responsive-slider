@@ -124,6 +124,14 @@ class A3_Responsive_Slider_Hook_Filter
 
 		wp_enqueue_script( 'a3-rslider-frontend' );
 
+		$a3_rslider_frontend_params = array();
+		if ( function_exists( 'a3_lazy_load_enable' ) && ! class_exists( 'A3_Portfolio' ) ) {
+			$a3_rslider_frontend_params['enable_lazyload'] = 1;
+		} else {
+			$a3_rslider_frontend_params['enable_lazyload'] = 0;
+		}
+		wp_localize_script( 'a3-rslider-frontend', 'a3_rslider_frontend_params', $a3_rslider_frontend_params );
+
 		wp_enqueue_script( 'a3-cycle2-center-script' );
 		if ( $script_settings['caption2'] ) {
 			wp_enqueue_script( 'a3-cycle2-caption2-script' );
