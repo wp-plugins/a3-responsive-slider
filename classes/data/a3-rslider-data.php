@@ -9,8 +9,7 @@ class A3_Responsive_Slider_Data
 			if( ! empty($wpdb->charset ) ) $collate .= "DEFAULT CHARACTER SET $wpdb->charset";
 			if( ! empty($wpdb->collate ) ) $collate .= " COLLATE $wpdb->collate";
 		}
-		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-			
+
 		$a3_rslider_images = $wpdb->prefix . "a3_rslider_images";
 		if($wpdb->get_var("SHOW TABLES LIKE '$a3_rslider_images'") != $a3_rslider_images){
 			$sql = "CREATE TABLE " . $a3_rslider_images . " (
@@ -22,10 +21,12 @@ class A3_Responsive_Slider_Data
 						  `img_title` blob,
 						  `img_description` blob,
 						  `img_link` text,
+						  `show_readmore` tinyint(1) NOT NULL default 0,
 						  `img_order` int(11) NOT NULL default 0,
 						  PRIMARY KEY  (`id`)
 						) $collate ;";
-			dbDelta($sql);		
+
+			$wpdb->query($sql);
 		}
 	}
 		
@@ -88,20 +89,20 @@ class A3_Responsive_Slider_Data
 		}
 	}
 	
-	public static function insert_row_image( $slider_id, $img_url, $img_link, $img_title, $img_description, $img_order ) {
+	public static function insert_row_image( $slider_id, $img_url, $img_link, $img_title, $img_description, $img_order, $show_readmore = 1 ) {
 		global $wpdb;
 		$table_name = $wpdb->prefix. "a3_rslider_images";
 		$img_title = addslashes($img_title);
 		$img_description = addslashes($img_description);
-		$wpdb->query("INSERT INTO ".$wpdb->prefix."a3_rslider_images(`id`, `slider_id`, `img_url`, `img_title`, `img_link`, `img_description`, `img_order` ) VALUES (NULL,'$slider_id','$img_url','$img_title','$img_link','$img_description', '$img_order' );");
+		$wpdb->query("INSERT INTO ".$wpdb->prefix."a3_rslider_images(`id`, `slider_id`, `img_url`, `img_title`, `img_link`, `img_description`, `img_order`, `show_readmore` ) VALUES (NULL,'$slider_id','$img_url','$img_title','$img_link','$img_description', '$img_order', '$show_readmore' );");
 	}
 	
-	public static function insert_row_video( $slider_id, $video_url, $img_link, $img_title, $img_description, $img_order ) {
+	public static function insert_row_video( $slider_id, $video_url, $img_link, $img_title, $img_description, $img_order, $show_readmore = 1 ) {
 		global $wpdb;
 		$table_name = $wpdb->prefix. "a3_rslider_images";
 		$img_title = addslashes($img_title);
 		$img_description = addslashes($img_description);
-		$wpdb->query("INSERT INTO ".$wpdb->prefix."a3_rslider_images(`id`, `slider_id`, `video_url`, `is_video`, `img_title`, `img_link`, `img_description`, `img_order` ) VALUES (NULL,'$slider_id','$video_url', 1, '$img_title','$img_link','$img_description', '$img_order' );");
+		$wpdb->query("INSERT INTO ".$wpdb->prefix."a3_rslider_images(`id`, `slider_id`, `video_url`, `is_video`, `img_title`, `img_link`, `img_description`, `img_order`, `show_readmore` ) VALUES (NULL,'$slider_id','$video_url', 1, '$img_title','$img_link','$img_description', '$img_order', '$show_readmore' );");
 	}
 	
 	public static function count_images_in_slider( $slider_id ) {

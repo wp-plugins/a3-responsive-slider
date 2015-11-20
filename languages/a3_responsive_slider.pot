@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: A3 Responsive Slider\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-16 17:07+0700\n"
-"PO-Revision-Date: 2015-01-16 17:07+0700\n"
+"POT-Creation-Date: 2015-08-21 16:45+0700\n"
+"PO-Revision-Date: 2015-08-21 16:45+0700\n"
 "Last-Translator: Nguyen Cong Tuan <mr.nguyencongtuan@gmail.com>\n"
 "Language-Team: a3rev\n"
 "Language: en\n"
@@ -2357,12 +2357,13 @@ msgstr ""
 msgid "Support"
 msgstr ""
 
+#: classes/a3-rslider-hook-filter.php:241
 #: shortcodes/class-rslider-shortcodes.php:77
-msgid "Insert shortcode"
+msgid "Sliders"
 msgstr ""
 
 #: shortcodes/class-rslider-shortcodes.php:77
-msgid "Sliders"
+msgid "Insert shortcode"
 msgstr ""
 
 #: shortcodes/class-rslider-shortcodes.php:103
